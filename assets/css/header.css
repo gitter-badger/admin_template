@@ -1,10 +1,14 @@
 header {
+	margin-left: 240px;
 	background: #2196f3;
+	background: linear-gradient(45deg, #8e24aa 0%, #ff6e40 100%);
+    box-shadow: 0 6px 20px 0 rgba(255, 110, 64, 0.5);
 }
+
 header h1 {
 	margin: 0;
 	color: #fff;
 	text-align: center;
-	padding: 15px;
+	padding: 12px;
 	font-weight: lighter;
 }
