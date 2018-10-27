@@ -1,8 +1,18 @@
-header {
+/*header {
 	margin-left: 240px;
 	background: #2196f3;
 	background: linear-gradient(45deg, #8e24aa 0%, #ff6e40 100%);
     box-shadow: 0 6px 20px 0 rgba(255, 110, 64, 0.5);
+}*/
+
+header {
+	position: fixed;
+    width: 100%;
+    background: #2196f3;
+    background: linear-gradient(45deg, #673AB7 0%, #BA68C8 100%);
+    box-shadow: 0 1px 5px 0 rgba(49, 49, 49, 0.5);
+
+    z-index: 1;
 }
 
 header h1 {

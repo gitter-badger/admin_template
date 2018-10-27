@@ -3,18 +3,20 @@ nav {
 	position: fixed;
 	width: 240px;
 	height: 100%;
-	background: #fff;
+	background: #fbfbfb;
 	top: 0;
 
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
 			    0 1px 5px 0 rgba(0, 0, 0, 0.12),
 			    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+	z-index: 2;
 }
 
 .sidebar-logo {
     background: teal;
     padding: 4px;
-    background: #9c2e9d !important;
+    background: #6f3eb8 !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
        			0 1px 5px 0 rgba(0, 0, 0, 0.12), 
         		0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -26,12 +28,12 @@ nav {
     color: #fff;
 }
 
-nav ul {
+nav .side-menu {
 	padding: 0;
 	margin: 0;
 }
 
-nav ul li {
+nav .side-menu li:not(.no-padding) {
 	list-style: none;
 	display: block;
 	padding: 13px 0px 13px 10px;
@@ -41,9 +43,29 @@ nav ul li:not(.no-padding):hover {
 	    background-color: rgba(0, 0, 0, 0.04);
 }
 
-nav ul li > a {
-	text-decoration: none;
-	color: #000;
-	margin-left: 10px;
+.side-menu li.active {
+    background: #6c3db83b;
 }
+
+.side-menu li > a {
+	text-decoration: none;
+	color: #6f3eb8;
+	margin-left: 10px;
+	font-size: .9em;
+}
+
+.side-menu li > a i {
+    width: 2rem;
+    font-size: 2rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 0;
+}
+
+.side-menu li > a span {
+	line-height: 2.5em;
+}
+
+
 
