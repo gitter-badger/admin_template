@@ -1,6 +1,14 @@
-.chart-container {
-  position: relative;
-  margin: auto;
-  height: 80vh;
-  width: 80vw;
+.card {
+    overflow: hidden;
 }
+.card {
+    border-radius: 3px;
+}
+.card {
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
