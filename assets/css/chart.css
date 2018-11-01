@@ -30,3 +30,7 @@
 .purple.darken-1{
     background-color: #9575CD !important;
 }
+
+.column.full {
+    width: 100%;
+}

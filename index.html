@@ -9,7 +9,6 @@
       rel="stylesheet">
 </head>
 <body>
-
 </body>
 	<header>
 	<!-- Header -->
@@ -53,8 +52,7 @@
 				<div class="column col-6">
 					<div class="chart card cyan darken-1">
 					<div class="card-content">
-							<h1>This card sample for chart</h1>
-							<span>Column 1</span>	
+							<span>Revenue</span>
 							<canvas id="lineChart" width="400" height="200"></canvas>
 						</div>		
 					</div>
@@ -62,9 +60,19 @@
 				<div class="column col-6">
 					<div class="chart card col-6 purple darken-1">
 						<div class="card-content">
-							<h1>This card sample for chart</h1>
-							<span>Column 2</span>
+							<span>Stocks</span>
 								<canvas id="barChart" width="400" height="200"></canvas>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column full">
+					<div class="chart card purple darken-1">
+						<div class="card-content">
+							<span>Stocks</span>
+								<canvas id="full-lineChart" width="400" height="200"></canvas>	
 						</div>
 					</div>
 				</div>
@@ -80,5 +88,7 @@
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 
 	<script src="assets/js/custom.js"></script>
-	<script src="assets/js/initialize-chart.js"></script>
+	<script src="assets/js/line-chart.js"></script>
+	<script src="assets/js/bar-chart.js"></script>
+	<script src="assets/js/full-lineChart.js"></script>
 </html>
