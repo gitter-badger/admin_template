@@ -1,7 +1,10 @@
 $(document).ready(function(){
-
+  //initialize collapsible
 	$('.collapsible').collapsible();
-
+  // Initialize Datepicker
+  $('.datepicker').datepicker();
+  // initialuze time picker
+  $('.timepicker').timepicker();
 
 	$('input.autocomplete').autocomplete({
       data: {

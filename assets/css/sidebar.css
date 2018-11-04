@@ -75,18 +75,23 @@
     color: #6f3eb8;
 } 
 
-#sub-level-side-menu li {
+/*#sub-level-side-menu li {
     padding: 0;
     margin-left: 28px;
 
 }
-
+*/
 .collapsible li.active {
     background-color: rgb(176, 99, 198);
 }
 
 .collapsible li.active .collapsible-header {
     color: #fff;
+}
+
+.sidenav .collapsible-body li a, 
+.sidenav.fixed .collapsible-body li a {
+    padding: 0 23.5px 0px 69px;
 }
 
 
