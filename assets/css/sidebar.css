@@ -1,8 +1,4 @@
-nav {
-	display: block;
-	position: fixed;
-	width: 240px;
-	height: 100%;
+.sidenav .sidebar-logo {
 	background: #fbfbfb;
 	top: 0;
 
@@ -13,7 +9,12 @@ nav {
 	z-index: 2;
 }
 
-.sidebar-logo {
+.sidenav.sidenav-fixed {
+	background: #fbfbfb;
+}
+
+.sidenav .sidebar-logo {
+	height: 64px;
     background: teal;
     padding: 4px;
     background: #6f3eb8 !important;
@@ -21,31 +22,27 @@ nav {
        			0 1px 5px 0 rgba(0, 0, 0, 0.12), 
         		0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
+.sidenav {
+	width: 240px;
+}
+
+.sidenav .sidebar-logo {
+	height: 64px;
+}
 
 .sidebar-logo .admin-header {
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    margin: 0;
+    padding: 8px;
+    font-size: 2.5em;
 }
 
-nav .side-menu {
-	padding: 0;
-	margin: 0;
-}
-
-nav .side-menu li:not(.no-padding) {
-	list-style: none;
-	display: block;
-	padding: 13px 0px 13px 10px;
-}
-
-nav ul li:not(.no-padding):hover {
-	    background-color: rgba(0, 0, 0, 0.04);
-}
 
 .side-menu li.active {
     background: #6c3db83b;
 }
+
 
 .side-menu li > a {
 	text-decoration: none;
@@ -66,6 +63,34 @@ nav ul li:not(.no-padding):hover {
 .side-menu li > a span {
 	line-height: 2.5em;
 }
+
+.sidenav .collapsible li, 
+.sidenav.fixed .collapsible li {
+    padding: 0;
+    margin-left: -9px;
+}
+
+
+.sidenav .collapsible-header {
+    color: #6f3eb8;
+} 
+
+#sub-level-side-menu li {
+    padding: 0;
+    margin-left: 28px;
+
+}
+
+.collapsible li.active {
+    background-color: rgb(176, 99, 198);
+}
+
+.collapsible li.active .collapsible-header {
+    color: #fff;
+}
+
+
+
 
 
 

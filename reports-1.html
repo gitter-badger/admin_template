@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Iclude this icon font from google fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+</body>
+	
+	<header class="admin-main-header">
+		<h1>Simple header</h1>
+	</header>	
+	<aside>
+		<ul class="sidenav sidenav-fixed">
+	    	<div class="white-text light sidebar-logo">
+				<h1 class="admin-header">Admin</h1>
+			</div>
+			<li>
+				<a href="index.html">
+					<i class="small material-icons">timeline</i>
+					Overview
+				</a>
+			</li>
+			<li class="nod-padding">
+				<!-- Toggle down this menu if click -->
+				<ul class="collapsible">
+			    <li>
+			     	 <div class="collapsible-header"><i class="material-icons">filter_drama</i>Reports</div>
+				      <div class="collapsible-body">
+				      		<ul id="sub-level-side-menu">
+				      			<li><a href="reports-1.html">
+									Reports 1</a></li>
+								<li><a href="reports-2.html">
+									Reports 2
+								</a></li>
+				      		</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+				      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+				      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+				    </li>
+			  	</ul>	
+			</li>
+			<li><a href="reports.html">
+				<i class="small material-icons">today</i>
+				Reports
+			</a></li>
+			<li><a href="#!">
+				<i class="small material-icons">equalizer</i>
+				Sales
+			</a></li>
+	    </ul>
+	</aside>
+	
+	<main class="admin-content">
+			
+	<!-- Content -->
+		<div class="container">
+			<h1>Change this heading</h1>
+			<form>
+				<div class="row">
+					<div class="input-field col s12 m6">
+					    <select id="select-options">
+					      	<option value="" disabled selected>Choose your option</option>
+					        <option value="one">Option 1</option>
+					        <option value="two">Option 2</option>
+					        <option value="three">Option 3</option>
+					        <option value="four">Option 4</option>
+					    </select>
+					    <label>Optgroups</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12 m6">
+					    <select id="select-report">
+					      	<option value="" disabled selected>Choose your option</option>
+					        <option value="one">Option 1</option>
+					        <option value="two">Option 2</option>
+					        <option value="three">Option 3</option>
+					        <option value="four">Option 4</option>
+					        <option value="five">Option 5</option>
+					    </select>
+					    <label>Optgroups</label>
+					</div>
+				</div>
+				<!-- show this select base on value -->
+				<div class="row forms" id="one">
+					<div class="input-field col s12 m6">
+					    <select>
+					    	<option value="" disabled selected>Choose your option</option>
+					        <option value="sub1">Option 1</option>
+					        <option value="sub2">Option 2</option>
+					        <option value="sub3">Option 3</option>
+					        <option value="sub4">Option 4</option>
+					    </select>
+					    <label>Select item one</label>
+					</div>
+				</div>
+
+				<div class="row forms" id="two">
+					<div class="input-field col s12 m6">
+					    <select>
+					    	<option value="" disabled selected>Choose your option</option>
+					        <option value="1">Option 1</option>
+					        <option value="2">Option 2</option>
+					        <option value="3">Option 3</option>
+					        <option value="4">Option 4</option>
+					        <option value="4">Option 4</option>
+					    </select>
+					    <label>Select item two</label>
+					</div>
+				</div>
+				<div class="row forms" id="three">
+					<div class="input-field col s12 m6">
+					    <select>
+					    	<option value="" disabled selected>Choose your option</option>
+					        <option value="1">Option 1</option>
+					        <option value="2">Option 2</option>
+					        <option value="3">Option 3</option>
+					        <option value="4">Option 4</option>
+					    </select>
+					    <label>Select item three</label>
+					</div>
+				</div>
+				<div class="row forms" id="four">
+					<div class="input-field col s12 m6">
+					    <select>
+					    	<option value="" disabled selected>Choose your option</option>
+					        <option value="1">Option 1</option>
+					        <option value="2">Option 2</option>
+					        <option value="3">Option 3</option>
+					        <option value="4">Option 4</option>
+					    </select>
+					    <label>Select item four</label>
+					</div>
+				</div>
+				<div class="input-field">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+	<!-- footer -->	
+	</footer>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/materialize.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			var selectOption = $('#select-report');
+
+			selectOption.change(function(){
+				var selectDiv = $('.forms');
+				selectDiv.hide();
+				$('#' + $(this).val()).show();
+			})
+		})
+	</script>
+</html>

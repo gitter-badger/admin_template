@@ -1,6 +1,11 @@
 let barChartContext = document.getElementById("barChart").getContext('2d');
 $(document).ready(function(){
 	let barChartContext = document.getElementById("barChart").getContext('2d');
+	
+	Chart.defaults.global.defaultFontFamily = 'Lato';
+	Chart.defaults.global.defaultFontSize = 12;
+	Chart.defaults.global.defaultFontColor = '#fff';
+	// Chart.defaults.scale.gridLines.display = false;
 
 	let barChartData = [12, 5, 3, 5, 2, 3];
 	let barChart = new Chart(barChartContext, {
@@ -8,6 +13,7 @@ $(document).ready(function(){
 		data: {
 		    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
 		    datasets: [{
+		    	// Label name
 		        label: 'Number of Votes',
 		        // chat background color
 		        backgroundColor: [
@@ -34,24 +40,34 @@ $(document).ready(function(){
 		    }]
 		},
 		options: {
-			legend:{labels: {fontColor: 'white'}},
-			title: {
-				display: true,
-				fontColor: 'white',
-				tet: 'Custom Chart Title'
+			// legend:{labels: {fontColor: '#6d6d6d'}},
+			legend: {
+				display: false
 			},
+			// Chart title
+			// title: {
+			// 	display: true,
+			// 	fontColor: '#000',
+			// 	text: 'Custom Chart Title'
+			// },
 			scales: {
 			    yAxes: [{
+			    	// gridLines: {
+        //             	color: '#b566c77a',
+        //         	},
 			        ticks: {
 			            beginAtZero:true,
-			            // fontColor: 'white'
+			            fontColor: '#fff'
 			        }
+			    }],
+			    xAxes: [{
+			    	// gridLines: {
+        //             	color: '#b566c77a',
+        //         	},
+			    	ticks: {
+			    		fontColor: '#fff'
+			    	}
 			    }]
-			    // xAxes: [{
-			    // 	ticks: {
-			    // 		fontColor: 'white'
-			    // 	}
-			    // }]
 			}
 		}
 	});

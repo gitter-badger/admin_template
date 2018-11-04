@@ -4,7 +4,7 @@ $(document).ready(function(){
 	Chart.defaults.global.defaultFontSize = 12;
 	Chart.defaults.global.defaultFontColor = '#fff';
 	// line chart
-	let lineChart = document.getElementById("full-lineChart").getContext('2d');
+	let lineChart = document.getElementById("line2-lineChart").getContext('2d');
 	let chartData = [12, 5, 3, 5, 2, 3];
 	let myChart = new Chart(lineChart, {
 		type: 'line',
@@ -22,7 +22,7 @@ $(document).ready(function(){
 		        'rgb(176, 99, 198)'
 		        ],
 		        // border width of line
-		        borderWidth: 5,
+		        borderWidth: 2,
 		        data: chartData
 		    }]
 		},
@@ -40,13 +40,13 @@ $(document).ready(function(){
 			    	display: true,
 			        ticks: {
 			            beginAtZero:true,
-			            fontColor: '#6d6d6d'
+			            fontColor: '#fff'
 			        }
 			    }],
 			    xAxes: [{
 			    	display: true,
 			    	ticks: {
-			    		fontColor: '#6d6d6d'
+			    		fontColor: '#fff'
 			    	}
 			    }]
 			}

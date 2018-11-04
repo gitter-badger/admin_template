@@ -1,41 +1,53 @@
 html {
-    line-height: 1.5;
-    font-family: "Roboto", sans-serif !important;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.87);
-
-     box-sizing: border-box;
+    background: #eeeeee91;
 }
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 
 body {
-	margin: 0;
-	background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-/*box shadow style for the following*/
-.z-depth-1, 
-nav, 
-.card-panel, 
-.card, 
-.toast, 
-.btn, 
-.btn-large, 
-.btn-floating, 
-.dropdown-content, 
-.collapsible, 
-.side-nav {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
-    0 1px 5px 0 rgba(0, 0, 0, 0.12), 
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+main {
+flex: 1 0 auto;
 }
 
+@media only screen and (min-width: 993px) {
+    .container {
+    width: 90%;
+    }
+}
+
+span.badge {
+    font-size: .7rem;
+}
+
+span.badge:hover {
+    cursor: default;
+}
+
+span.btn {
+    background-color: #b565c7;
+}
+
+.sidenav li>a {
+    color: rgb(111, 62, 184);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.material-icons {
+    color: #6f3eb8 !important;
+}
+
+.sidenav li>a>i.material-icons {
+    margin: 0 15px 0 0;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
 
 
 

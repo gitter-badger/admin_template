@@ -4,44 +4,50 @@ $(document).ready(function(){
 	Chart.defaults.global.defaultFontSize = 12;
 	Chart.defaults.global.defaultFontColor = '#fff';
 	// line chart
-	let lineChart = document.getElementById("lineChart").getContext('2d');
-	let chartData = [12, 5, 3, 5, 2, 3];
-	let myChart = new Chart(lineChart, {
+	var lineChart = document.getElementById("lineChart").getContext('2d');
+
+	var chartData = [12, 5, 3, 5, 2, 3];
+
+	var myChart = new Chart(lineChart, {
 		type: 'line',
 		data: {
 		    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
 		    datasets: [{
+		    	// Label
 		        label: 'Number of Votes',
-		        // chat background color
+		        // chart background color
 		        backgroundColor: [
-		        'rgba(255, 255, 255, 0.44)'
+		        'rgba(0, 0, 0, 0.06)'
 			    ],
 			    // Line color
 		        borderColor: [
-		        'rgba(255, 255, 255, 0.87)'
+		        'rgb(176, 99, 198)'
 		        ],
 		        // border width of line
-		        borderWidth: 5,
+		        borderWidth: 2,
 		        data: chartData
 		    }]
 		},
 		options: {
-			legend:{labels: {fontColor: 'white'}},
-			title: {
-				display: true,
-				fontColor: 'white',
-				tet: 'Custom Chart Title'
+			// legend:{labels: {fontColor: '#6d6d6d'}},
+			legend: {
+				display: false
 			},
+			// title: {
+			// 	display: true,
+			// 	fontColor: '#6d6d6d',
+			// 	text: 'Custom Chart Title'
+			// },
 			scales: {
 			    yAxes: [{
 			        ticks: {
 			            beginAtZero:true,
-			            fontColor: 'white'
+			            fontColor: '#fff'
 			        }
 			    }],
 			    xAxes: [{
 			    	ticks: {
-			    		fontColor: 'white'
+			    		fontColor: '#fff'
 			    	}
 			    }]
 			}

@@ -10,75 +10,105 @@
 </head>
 <body>
 </body>
-	<header>
-	<!-- Header -->
-		<h1>Simple header</h1>
-	</header>
 	
+	<header class="admin-main-header">
+		<h1>Simple header</h1>
+	</header>	
 	<aside>
-	<!-- Didebar-->	
-		<nav>
-			<div class="sidebar-logo">
+		<ul class="sidenav sidenav-fixed">
+	    	<div class="white-text light sidebar-logo">
 				<h1 class="admin-header">Admin</h1>
 			</div>
-			<ul class="side-menu">
-				<li class="active">
-					<a href="#"> 
-					<i class="material-icons">timeline</i>
-					<span>Overview</span>
-					</a>
-				</li>
-				<li>
-					<a href="#"> 
-					<i class="material-icons">today</i>
-					<span>Reports</span>
-					</a>
-				</li><li>
-					<a href="#"> 
-					<i class="material-icons">equalizer</i>
-					<span>Sales</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
+			<li>
+				<a href="index.html">
+					<i class="small material-icons">timeline</i>
+					Overview
+				</a>
+			</li>
+			<li class="nod-padding">
+				<ul class="collapsible">
+			   		<li>
+			     	 <div class="collapsible-header">
+			     	 	<i class="material-icons">filter_drama</i>
+			     	 	Reports
+			     	 </div>
+
+				      <div class="collapsible-body">
+				      		<ul id="sub-level-side-menu">
+				      			<li><a href="reports-1.html">
+									Reports 1</a></li>
+								<li><a href="reports-2.html">
+									Reports 2
+								</a></li>
+				      		</ul>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+				      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+				      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+				    </li>
+			  	</ul>	
+			</li>
+			<li><a href="reports.html">
+				<i class="small material-icons">today</i>
+				Reports
+			</a></li>
+			<li><a href="#!">
+				<i class="small material-icons">equalizer</i>
+				Sales
+			</a></li>
+	    </ul>
 	</aside>
-	<main>
+	
+	<main class="admin-content">
 	<!-- Content -->
 		<div class="container">
-<!-- 	<div class="header">
-				<h2>Reports</h2>
-			</div> -->
-			<div class="row">
-				<div class="column col-6">
-					<div class="chart card cyan darken-1">
+
+		 	<div class="row">
+			    <div class="column col m4">
+					<div class="chart card purple">
 					<div class="card-content">
-							<span>Revenue</span>
+							<span class="badge btn white-text">Revenue</span>
 							<canvas id="lineChart" width="400" height="200"></canvas>
 						</div>		
 					</div>
 				</div>
-				<div class="column col-6">
-					<div class="chart card col-6 purple darken-1">
+
+				<div class="column col m4">
+					<div class="chart card red lighten-1">
 						<div class="card-content">
-							<span>Stocks</span>
+							<span  class="badge btn white-text">Stocks</span>
 								<canvas id="barChart" width="400" height="200"></canvas>	
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="column full">
-					<div class="chart card purple darken-1">
+				<div class="column col m4">
+					<div class="chart card teal lighten-1">
 						<div class="card-content">
-							<span>Stocks</span>
-								<canvas id="full-lineChart" width="400" height="200"></canvas>	
+							<span  class="badge btn white-text">Clicks</span>
+								<canvas id="line2-lineChart" width="400" height="200"></canvas>	
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+	  		</div>
 
+	  		<div class="row">
+	  			<div class="column col s12">
+					<div class="chart card">
+						<div class="card-content">
+							<span class="badge btn white-text">Clicks</span>
+								<canvas id="full-lineChart" width="400" height="170"></canvas>	
+						</div>
+					</div>
+				</div>
+	  		</div>
+
+		</div>
 	</main>
 
 	<footer>
@@ -86,9 +116,10 @@
 	</footer>
 	<script src="assets/js/chart-min.js"></script>
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
-
-	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/materialize.js"></script>
 	<script src="assets/js/line-chart.js"></script>
+	<script src="assets/js/line2-chart.js"></script>
 	<script src="assets/js/bar-chart.js"></script>
 	<script src="assets/js/full-lineChart.js"></script>
+	<script src="assets/js/init.js"></script>
 </html>
