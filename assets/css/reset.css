@@ -49,6 +49,12 @@ span.btn {
     padding: 0 !important;
 }
 
+@media only screen and (max-width: 992px){
+    .sidenav.sidenav-fixed {
+    -webkit-transform: translateX(-105%);
+    transform: translateX(0%) !important;
+    }
+}
 
 
 
