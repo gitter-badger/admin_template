@@ -57,7 +57,7 @@
 				      		<!-- callapse menu -->
 				      		<ul id="sub-level-side-menu">
 				      			<li>
-				      				<a href="date-picker1.html">Date picker</a>
+				      				<a href="date-picker1.html">Date picker 1</a>
 								</li>
 								<li>
 									<a href="time-picker.html">Time picker</a>
@@ -104,60 +104,37 @@
 	<!-- Content -->
 		<div class="container">
 			<div class="center">
-				<h4>Auto Complete Search</h4>
+				<h4>Report Results</h4>
 			</div>
-			<!-- form -->
+			<!-- query result in table -->
 			<!--  -->
-			<form>
-				<div class="row">
-				    <div class="col s12">
-				      <div class="row">
-				        <div class="input-field col s12">
-				          <i class="material-icons prefix">search</i>
-				          <input type="text" id="autocomplete-input" class="autocomplete">
-				          <label for="autocomplete-input">Autocomplete</label>
-				        </div>
-				      </div>
-				    </div>
+			<table class="highlight">
+		        <thead>
+		          <tr>
+		              <th>Name</th>
+		              <th>Item Name</th>
+		              <th>Item Price</th>
+		          </tr>
+		        </thead>
 
-				    <div class="input-field col s6">
-					    <select>
-					      <option value="" disabled selected>Choose Region</option>
-					      <option value="1">Option 1</option>
-					      <option value="2">Option 2</option>
-					      <option value="3">Option 3</option>
-					    </select>
-					    <label>region</label>
-					 </div>
-					 <div class="input-field col s6">
-					    <select>
-					      <option value="" disabled selected>Location</option>
-					      <option value="1">Option 1</option>
-					      <option value="2">Option 2</option>
-					      <option value="3">Option 3</option>
-					      <option value="1">Option 1</option>
-					      <option value="2">Option 2</option>
-					      <option value="3">Option 3</option>
-					      <option value="1">Option 1</option>
-					      <option value="2">Option 2</option>
-					      <option value="3">Option 3</option>
-					      <option value="1">Option 1</option>
-					      <option value="2">Option 2</option>
-					      <option value="3">Option 3</option>
-
-					    </select>
-					    <label>Location</label>
-					 </div>
-				    <div class="row">
-				    	<div class="input-field">
-							<!-- this button is just a representation view for query results-->
-							<button  type="submit" formaction="result.html" class="btn btn-primary">Submit</button>
-							<!-- uncomment this button below and set form redirect when submmit -->
-							<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-						</div>
-				    </div>
-			    </div>
-			</form>
+		        <tbody>
+		          <tr>
+		            <td>Alvin</td>
+		            <td>Eclair</td>
+		            <td>$0.87</td>
+		          </tr>
+		          <tr>
+		            <td>Alan</td>
+		            <td>Jellybean</td>
+		            <td>$3.76</td>
+		          </tr>
+		          <tr>
+		            <td>Jonathan</td>
+		            <td>Lollipop</td>
+		            <td>$7.00</td>
+		          </tr>
+		        </tbody>
+		      </table>
 		</div>
 	</main>
 
