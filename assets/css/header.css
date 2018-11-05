@@ -8,9 +8,9 @@
 header.admin-main-header {
 	position: fixed;
     width: calc(100% - 240px);
-    background: #2196f3;
-    background: linear-gradient(45deg, #673AB7 0%, #BA68C8 100%);
-    box-shadow: 0 1px 5px 0 rgba(49, 49, 49, 0.5);
+    background: #fff;
+    /*background: linear-gradient(45deg, #673AB7 0%, #BA68C8 100%);*/
+    box-shadow: 0 1px 1px 0 rgba(49, 49, 49, 0.1);
     height: 64px;
     left: 240px;
     z-index: 1;
@@ -18,7 +18,7 @@ header.admin-main-header {
 
 header h1 {
 	margin: 0;
-	color: #fff;
+	color: #9E9E9E;;
 	text-align: center;
 	padding: 12px;
 	font-weight: lighter;

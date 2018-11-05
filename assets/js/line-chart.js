@@ -5,7 +5,7 @@ $(document).ready(function(){
 	Chart.defaults.global.defaultFontColor = '#fff';
 	// line chart
 	var lineChart = document.getElementById("lineChart").getContext('2d');
-
+	// var data = []
 	var chartData = [12, 5, 3, 5, 2, 3];
 
 	var myChart = new Chart(lineChart, {
@@ -42,14 +42,42 @@ $(document).ready(function(){
 			    yAxes: [{
 			        ticks: {
 			            beginAtZero:true,
-			            fontColor: '#fff'
+			            fontColor: '#6d6d6d'
 			        }
 			    }],
 			    xAxes: [{
 			    	ticks: {
-			    		fontColor: '#fff'
+			    		fontColor: '#6d6d6d'
 			    	}
 			    }]
+			},
+			// Styling tooltip
+			tooltips: {
+				displayColors: false,
+				position: 'nearest',
+				mode: 'index',
+				intersect: false,
+				yPadding: 15,
+				xPadding: 15,
+				backgroundColor: 'white',
+				titleFontColor: '#6d6d6d',
+				footerSpacing: 4,
+				bodyFontColor: 'black',
+				borderColor: '#cacaca',
+				bodySpacing: 4,
+				borderWidth: 2,
+				callbacks: {
+					//Used label callback to return the desired label
+					label: function(tooltipItem, data) {
+						// tootlip label
+						return tooltipItem.xLabel + " : " + tooltipItem.yLabel;
+					},
+					// remove title
+					title: function(tooltipItem, data){
+						// Add tootlip title
+						return 'Number of votes';
+					}	
+				}
 			}
 		}
 	});

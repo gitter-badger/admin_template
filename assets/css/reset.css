@@ -30,12 +30,6 @@ span.btn {
     background-color: #b565c7;
 }
 
-.sidenav li>a {
-    color: rgb(111, 62, 184);
-    font-size: 13px;
-    font-weight: 400;
-    padding: 0 10px;
-}
 
 .material-icons {
     color: #6f3eb8 !important;

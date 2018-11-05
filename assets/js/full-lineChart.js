@@ -49,6 +49,37 @@ $(document).ready(function(){
 			    		fontColor: '#6d6d6d'
 			    	}
 			    }]
+			},
+			tooltips: {
+				displayColors: false,
+				position: 'average',
+				mode: 'index',
+				intersect: false,
+				yPadding: 15,
+				xPadding: 15,
+				backgroundColor: 'white',
+				titleFontColor: '#6d6d6d',
+				footerSpacing: 4,
+				bodyFontColor: 'black',
+				borderColor: '#cacaca',
+				bodySpacing: 4,
+				borderWidth: 2,
+				callbacks: {
+					//Used label callback to return the desired label
+					label: function(tooltipItem, data) {
+						// tootlip label
+						return tooltipItem.xLabel + " : " + tooltipItem.yLabel;
+					},
+					// remove title
+					title: function(tooltipItem, data){
+						// Add tootlip title
+						return 'Number of votes';
+					}	
+				}
+			},
+			hover: {
+				mode: 'nearest',
+				intersect: true
 			}
 		}
 	});
