@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// Global Option
-	Chart.defaults.global.defaultFontFamily = 'Lato';
+	Chart.defaults.global.defaultFontFamily = 'Lato, Sans-serif';
 	Chart.defaults.global.defaultFontSize = 12;
 	Chart.defaults.global.defaultFontColor = '#fff';
 	// line chart

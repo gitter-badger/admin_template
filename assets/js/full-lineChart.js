@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	// Global Option
 	Chart.defaults.global.defaultFontFamily = 'Lato';
-	Chart.defaults.global.defaultFontSize = 12;
+	Chart.defaults.global.defaultFontSize = 15;
 	Chart.defaults.global.defaultFontColor = '#fff';
 	// line chart
 	let lineChart = document.getElementById("full-lineChart").getContext('2d');

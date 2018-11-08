@@ -742,3 +742,10 @@ a {
     width: 92%;
     width: calc(100% - 3rem);
 }
+
+.sample-columns {
+  background: #f19f9f;
+  text-align: center;
+  padding: 10px;
+}
+

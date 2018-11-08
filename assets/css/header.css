@@ -18,10 +18,12 @@ header.admin-main-header{
 
 main.admin-content {
 	margin-top: 64px;
+	padding-top: 50px;
+	margin-bottom: 100px;
 }
 main.admin-content,
 footer {
-	margin-left: 240px;	
+	margin-left: 300px;	
 }
 
 header h1 {
