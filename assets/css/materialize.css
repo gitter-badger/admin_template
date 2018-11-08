@@ -718,6 +718,27 @@ a {
 	text-decoration: none;
 }
 
-.active {
-    background-color: rgb(233, 233, 233);
+.input-field .prefix {
+  position: absolute;
+  width: 3rem;
+  font-size: 2rem;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  top: .5rem;
+  color: #6d6d6d;
+}
+
+.input-field .prefix.active {
+  color: #6d6d6d;
+}
+
+.input-field .prefix ~ input, 
+.input-field .prefix ~ textarea, 
+.input-field .prefix ~ label,
+.input-field .prefix ~ .validate ~ label,
+.input-field .prefix ~ .helper-text, 
+.input-field .prefix ~ .autocomplete-content {
+    margin-left: 3rem;
+    width: 92%;
+    width: calc(100% - 3rem);
 }

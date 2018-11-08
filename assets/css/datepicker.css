@@ -37,6 +37,12 @@
   width: 80px;
 }
 
+.datepicker-controls .select-wrapper input {
+    border-bottom: none !important;
+    text-align: center;
+    margin: 0;
+}
+
 .month-prev, .month-next {
   margin-top: 4px;
   cursor: pointer;

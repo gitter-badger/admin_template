@@ -10,13 +10,13 @@
 </head>
 <body>
 </body>
-	
 	<header class="admin-main-header">
-		<h1>Admin header</h1>
+		<h1>Admin Header</h1>
 	</header>	
+	
 	<aside>
-		<ul class="sidenav sidenav-fixed">
-	    	<div class="white-text light sidebar-logo">
+		<ul class="sidenav">
+    	<div class="sidebar-logo">
 				<h1 class="admin-header">Admin</h1>
 			</div>
 			<li>
@@ -27,7 +27,7 @@
 			</li>
 			<li class="nod-padding">
 				<!-- Toggle down this menu if click -->
-				<ul class="collapsible">
+				<ul class="collapsible collapsible-accordion">
 			    	<li>
 			     	 	<div class="collapsible-header">
 			     	 		<!-- icon header-->
@@ -60,7 +60,7 @@
 				      				<a href="date-picker1.html">Date picker</a>
 								</li>
 								<li>
-									<a href="time-picker.html">Time picker</a>
+									<a href="time-picker.html">time picker</a>
 								</li>
 				      		</ul>
 				      	</div>
@@ -96,8 +96,9 @@
 				Sales
 				</a>
 			</li>
-	    </ul>
+    	</ul>
 	</aside>
+
 	
 	<main class="admin-content">
 			
@@ -112,7 +113,7 @@
 				<div class="row">
 				    <div class="col s12">
 				      <div class="row">
-				        <div class="input-field col s12">
+				        <div class="input-field">
 				          <i class="material-icons prefix">search</i>
 				          <input type="text" id="autocomplete-input" class="autocomplete">
 				          <label for="autocomplete-input">Autocomplete</label>
@@ -122,7 +123,8 @@
 				  </div>
 
 			    <div class="row">
-				    <div class="input-field col s12 m6">
+				    <div class="input-field">
+				    	<i class="material-icons prefix">explore</i>
 					    <select>
 					      <option value="" disabled selected>Choose Region</option>
 					      <option value="1">Option 1</option>
@@ -131,8 +133,10 @@
 					    </select>
 					    <label>region</label>
 					</div>
-
-					<div class="input-field col s12 m6">
+				</div>
+				<div class="row">	
+					<div class="input-field">
+						<i class="material-icons prefix">place</i>
 					    <select>
 					      <option value="" disabled selected>Location</option>
 					      <option value="1">Option 1</option>
@@ -150,11 +154,13 @@
 					    </select>
 					    <label>Location</label>
 					</div>
-					<div class="input-field">
-						<!-- this button is just a representation view for query results-->
-						<button  type="submit" formaction="result.html" class="btn btn-primary">Submit</button>
-						<!-- uncomment this button below and set form redirect when submmit -->
-						<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+					<div class="row">
+						<div class="input-field">
+							<!-- this button is just a representation view for query results-->
+							<button  type="submit" formaction="result.html" class="btn btn-primary">Submit</button>
+							<!-- uncomment this button below and set form redirect when submmit -->
+							<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+						</div>
 					</div>
 				</div>
 			</form>
