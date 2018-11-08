@@ -5,6 +5,8 @@ $(document).ready(function(){
   $('.datepicker').datepicker();
   // initialuze time picker
   $('.timepicker').timepicker();
+  // Initialize modal
+  $('.modal').modal();
 
 	$('input.autocomplete').autocomplete({
       data: {
