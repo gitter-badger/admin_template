@@ -1,8 +1,51 @@
 @import "materialize.css";
-@import "reset.css";
-@import "header.css";
+/*@import "reset.css";
+
 @import "sidebar.css";
 @import "main.css";
-@import "select.css";
+@import "select.css";*/
 /*@import "footer.css";*/
 /*@import "chart.css";*/
+
+
+/*	background color  #d8d8d817
+	navigation backgroun: #492a24;
+	--button-background-color: red;
+	--button-hover-bg-color: red;
+	--button-active-bg-color: red;
+	--links-color: black;
+	--heading-font-size: 1em;
+
+
+	hover button background color
+	background: #c5c5c59c;
+	color: #615c5c;
+
+	#year text color
+	#8c8c8c;
+	
+	abbr color 
+	#474747;
+
+
+	dropdown span color
+	color: #474747;
+
+	disabled seleted
+	background color: #9e9e9e38;
+
+
+
+*/
+
+
+
+@import "datepicker.css";
+@import "dropdown.css";
+@import "modal.css";
+@import "header.css";
+@import "sidebar.css";
+@import "select.css";
+@import "grid.css";
+@import "button.css";
+@import "timepicker.css";

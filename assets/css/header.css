@@ -5,15 +5,23 @@
     box-shadow: 0 6px 20px 0 rgba(255, 110, 64, 0.5);
 }*/
 
-header.admin-main-header {
+header.admin-main-header{
 	position: fixed;
-    width: calc(100% - 240px);
-    background: #fff;
-    /*background: linear-gradient(45deg, #673AB7 0%, #BA68C8 100%);*/
-    box-shadow: 0 1px 1px 0 rgba(49, 49, 49, 0.1);
+	width: calc(100% - 300px);
+	background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.14);
+    box-shadow: none;
     height: 64px;
-    left: 240px;
+    left: 300px;
     z-index: 1;
+}
+
+main.admin-content {
+	margin-top: 64px;
+}
+main.admin-content,
+footer {
+	margin-left: 240px;	
 }
 
 header h1 {
