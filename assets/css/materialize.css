@@ -301,6 +301,17 @@ svg:not(:root) {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+ form {
+    display: block;
+    margin-top: 0em;
+}
+
+form .login {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
 button,
 input,
 optgroup,
