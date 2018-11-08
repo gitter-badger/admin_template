@@ -2901,12 +2901,12 @@ thead.table-header {
   will-change: bottom, opacity;
 }
 
-/*.modal {
+.modal {
   width: 100%;
   height: 100% !important;
   max-height: 100%;
   top: 0 !important;
-}*/
+}
 
 .modal-header {
     height: 64px;
