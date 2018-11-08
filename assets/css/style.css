@@ -2914,11 +2914,18 @@ thead.table-header {
     background: #492a24;
     color: #e7b91c;
     text-align: center;
+    position: relative;
 }
 
 
 .modal .modal-footer {
   padding: 4px 23px;
+}
+
+a.modal-close.btn-flat {
+    position: absolute;
+    left: 10px;
+    top: 15px;
 }
 
 
