@@ -894,7 +894,7 @@ a {
 }
 
 .card {
-    padding: 15px;
+    padding: 10px;
     position: relative;
     margin: .5rem 0 1rem 0;
     background-color: #fff;
@@ -1051,7 +1051,7 @@ a {
 
 .card .card-content {
     position: relative;
-    padding: 24px;
+    padding: 0;
     border-radius: 0 0 2px 2px
 }
 
@@ -2927,6 +2927,15 @@ a.modal-close.btn-flat {
     left: 10px;
     top: 15px;
 }
+
+canvas#lineChart,
+canvas#barChart,
+canvas#line2-lineChart,
+canvas#full-lineChart,{
+  position:relative; 
+  z-index: 999;
+}
+
 
 
 
