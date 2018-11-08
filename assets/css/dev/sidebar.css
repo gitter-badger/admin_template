@@ -61,7 +61,7 @@ aside .sidenav {
     line-height: 44px;
     margin: 0 10px 0 0;
     width: 24px;
-    color: rgba(0,0,0,0.54);
+    color: #492a24;
 }
 
 .sidenav .collapsible-header i, 
@@ -121,7 +121,7 @@ padding: 0;
     line-height: inherit;
     height: inherit;
     padding: 0 27px;
-    color: #6d6d6d;
+    color: #492a24;
 }
 
 .sidenav .collapsible-body {

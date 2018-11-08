@@ -1,0 +1,27 @@
+@import "global.css";
+@import "datepicker.css";
+@import "dropdown.css";
+@import "modal.css";
+@import "header.css";
+@import "sidebar.css";
+@import "select.css";
+@import "grid.css";
+@import "button.css";
+@import "timepicker.css";
+@import "card.css";
+@import "button.css";
+@import "preloader.css";
+@import "login.css";
+@import "table.css";
+
+
+/* colors
+	browncolor: #492a24; 
+	lightbrown: #492a24cf;
+	yellow color: #e7b91c;
+	yellow color dark: #e0b31c;
+	text color  white
+
+	light yellow #e7b91ca3
+
+*/ 

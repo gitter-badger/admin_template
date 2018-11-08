@@ -53,8 +53,8 @@
 /* Date Display */
 .datepicker-date-display {
   flex: 1 auto;
-  background-color: #ebebeb;
-  color: #424242;
+  background-color: #492a24;
+  color: #e7b91c;
   padding: 20px 22px;
   font-weight: 500;
 }
@@ -62,7 +62,7 @@
   display: block;
   font-size: 1.5rem;
   line-height: 25px;
-  color: #8c8c8c;;
+  color: #e0b31c;
 }
 .datepicker-date-display .date-text {
   display: block;
@@ -93,18 +93,19 @@
 }
 .datepicker-table abbr {
   text-decoration: none;
-  color: #474747;;
+  color: #492a24;
 }
 .datepicker-table td {
   border-radius: 50%;
   padding: 0;
 }
 .datepicker-table td.is-today {
-  color: teal;
+  color: #492a24;
+  background: #492a244f;
 }
 .datepicker-table td.is-selected {
-  background-color: #ebebeb;
-  color: teal;
+  background-color: #492a24;
+  color: #e7b91c
 }
 .datepicker-table 
 td.is-outside-current-month, 

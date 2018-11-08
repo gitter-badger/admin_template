@@ -21,7 +21,7 @@ $(document).ready(function(){
 			    ],
 			    // Line color
 		        borderColor: [
-		        'rgb(176, 99, 198)'
+		        '#492a24'
 		        ],
 		        // border width of line
 		        borderWidth: 2,
@@ -54,16 +54,17 @@ $(document).ready(function(){
 			// Styling tooltip
 			tooltips: {
 				displayColors: false,
-				position: 'nearest',
+				position: 'average',
 				mode: 'index',
 				intersect: false,
 				yPadding: 15,
 				xPadding: 15,
-				backgroundColor: 'white',
-				titleFontColor: '#6d6d6d',
+				backgroundColor: '#492a24',
+				titleFontColor: '#e0b31c',
+				bodyFontFamily: "'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue'",
 				footerSpacing: 4,
-				bodyFontColor: 'black',
-				borderColor: '#cacaca',
+				bodyFontColor: '#e7b91c',
+				borderColor: '#e0b31c',
 				bodySpacing: 4,
 				borderWidth: 2,
 				callbacks: {

@@ -736,11 +736,11 @@ a {
   -webkit-transition: color .2s;
   transition: color .2s;
   top: .5rem;
-  color: #6d6d6d;
+  color: #492a24;
 }
 
 .input-field .prefix.active {
-  color: #6d6d6d;
+  color: #e7b91c;
 }
 
 .input-field .prefix ~ input, 

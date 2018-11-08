@@ -2,6 +2,7 @@
 .timepicker-modal {
   max-width: 325px;
   max-height: none;
+  outline: 0;
 }
 
 .timepicker-container.modal-content {
@@ -23,20 +24,22 @@
   -webkit-flex: 1 auto;
   -ms-flex: 1 auto;
   flex: 1 auto;
-  background-color: #ebebeb;
+  background-color: #492a24;
   padding: 10px;
   font-weight: 300;
+
+  outline: 0;
 }
 
 .text-primary {
-   color: #bbbbbb;
+   color: #e7b91c;
 }
 
 .timepicker-text-container {
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
-  color: #424242;
+  color: #fafafa;
   font-weight: 500;
   position: relative;
   user-select: none;
@@ -100,7 +103,7 @@
 
 .timepicker-tick {
   border-radius: 50%;
-  color: #424242;
+  color: #492a24;
   line-height: 40px;
   text-align: center;
   width: 40px;
@@ -133,7 +136,7 @@
   transition: opacity 175ms;
 }
 .timepicker-canvas line {
-  stroke:#bbbbbb;
+  stroke: #b9afad;
   stroke-width: 4;
   stroke-linecap: round;
 }
@@ -149,7 +152,7 @@
 
 .timepicker-canvas-bg {
   stroke: none;
-  fill: #bbbbbb;
+  fill: #492a2452;
 }
 
 /* Footer */
@@ -210,6 +213,12 @@
 .confirmation-btns {
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+.timepicker-tick.active, 
+.timepicker-tick:hover {
+    background-color: rgb(73, 42, 36);
+    color: #e7b91c;
 }
 
 

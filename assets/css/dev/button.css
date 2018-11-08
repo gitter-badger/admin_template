@@ -1,7 +1,7 @@
 .btn, .btn-flat{
     text-decoration: none;
-    color: #6d6d6d;
-    background-color: #DFDFDF;
+    color: #492a24cf;
+    background-color: #e7b91ca3;
     text-align: center;
     letter-spacing: .5px;
     -webkit-transition: background-color .2s ease-out;
@@ -40,9 +40,9 @@
 
 .btn:hover,
 .btn-flat:hover {
-	color: #545454;
-	background: #9e9e9e57;
+	background:  #e7b91c;
     cursor: pointer;
+    color: #492a24;
 }
 .btn-primary:hover {
     color: #ffffff;
