@@ -13,7 +13,12 @@
 @import "preloader.css";
 @import "login.css";
 @import "table.css";
-
+@import "checkbox.css";
+/*
+new added css file
+*/
+@import "checkbox.css";
+@import "reports.css";
 
 /* colors
 	browncolor: #492a24; 

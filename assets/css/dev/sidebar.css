@@ -154,3 +154,28 @@ padding: 0;
 .collapsible li {
     outline: 0;
 }
+
+/*
+    sidenav right
+*/
+.sidenav-right {
+    position: fixed;
+    display: block;
+    right: 150px;
+    width: 270px;
+    padding: 10px;
+    height: 100%;
+    overflow: auto;
+}
+
+/*.sidenav-right li {
+    border-left: 1px solid #eae5e5;
+}*/
+.sidenav li.active {
+    background: #eee
+}
+
+#sub-level-side-menu li:hover{
+    cursor: pointer;
+}
+

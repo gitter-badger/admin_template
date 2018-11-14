@@ -2,7 +2,9 @@ $(document).ready(function(){
   //initialize collapsible
 	$('.collapsible').collapsible();
   // Initialize Datepicker
-  $('.datepicker').datepicker();
+  $('.datepicker').datepicker({
+    format: 'yyyy-mm-dd'
+  });
   // initialuze time picker
   $('.timepicker').timepicker();
   // Initialize modal
@@ -16,6 +18,20 @@ $(document).ready(function(){
       },
     });
 });
+
+var element = document.getElementsByClassName("click-trigger");
+
+for (var el in element){
+    element[el].onclick = function(){
+      $('.report_choice').hide();
+      $('#overview-container').addClass('hide')
+      var target = '#' + $(this).data('target')
+      $('#report-container').removeClass('hide')
+      $(target).show();
+
+    };
+};
+
 
 document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('select');

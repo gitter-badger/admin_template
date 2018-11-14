@@ -17,6 +17,7 @@ header.admin-main-header{
 }
 
 main.admin-content {
+	position: relative;
 	margin-top: 64px;
 	padding-top: 50px;
 	margin-bottom: 100px;
@@ -36,3 +37,4 @@ header h1 {
 	text-transform: uppercase;
 	line-height: 40px;
 }
+

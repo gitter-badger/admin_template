@@ -667,7 +667,7 @@ textarea.materialize-textarea {
     outline: none;
     height: 3rem;
     width: 100%;
-    font-size: 16px;
+    font-size: 12px;
     margin: 0 0 8px 0;
     padding: 0;
     -webkit-box-shadow: none;
@@ -759,4 +759,202 @@ a {
   text-align: center;
   padding: 10px;
 }
+
+b.strong {
+  color: #e88181;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+em.required {
+    color: #e88181;
+}
+
+.report_choice{
+  display: none;
+}
+
+.report_choice.active{
+  display: block;
+}
+
+.valign-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide {
+  display: none !important;
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center, .center-align {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.8rem 0 1.68rem 0;
+}
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 2.3733333333rem 0 1.424rem 0;
+}
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.9466666667rem 0 1.168rem 0;
+}
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.52rem 0 0.912rem 0;
+}
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 1.0933333333rem 0 0.656rem 0;
+}
+
+h6 {
+  font-size: 1.15rem;
+  line-height: 110%;
+  margin: 0.7666666667rem 0 0.46rem 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 500;
+}
+
+small {
+  font-size: 75%;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.card-header {
+  background: #492a24;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+span.rep-card-title {
+  font-weight: 500;
+}
+
+
+/*
+Goldilocks admin home page
+*/
+.goldi-admin-nav {
+  background: #492a24;  
+  height: 40px;
+  line-height: 40px;
+}
+
+.goldi-header-banner {
+  background:  #e0b31c;
+}
+
+.goldi-header .goldi-admin-nav h1 {
+  color: #fff;
+}
+
+.goldi-admin-nav p {
+  margin: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.goldi-header-banner {
+  height: 90px;
+}
+
+.goldi-header-banner {
+  position: relative;
+}
+
+.goldi-header-banner p {
+  position: absolute;
+  bottom: 0;
+  right: 217px;
+  font-size: 1.6em;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  color: #492a24;
+}
+
+.hide-this {
+  display: none;
+}
+
+.hide-this.active {
+  display: block;
+}
+
+.admin-home-sidenav .hide-this h5{
+  background: #492a24;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+
+
+
 
