@@ -24,7 +24,7 @@
   -webkit-flex: 1 auto;
   -ms-flex: 1 auto;
   flex: 1 auto;
-  background-color: #492a24;
+  background: #6e3629;
   padding: 10px;
   font-weight: 300;
 
@@ -32,7 +32,7 @@
 }
 
 .text-primary {
-   color: #e7b91c;
+   color: #fed605;
 }
 
 .timepicker-text-container {

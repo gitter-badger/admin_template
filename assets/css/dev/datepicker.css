@@ -53,8 +53,8 @@
 /* Date Display */
 .datepicker-date-display {
   flex: 1 auto;
-  background-color: #492a24;
-  color: #e7b91c;
+  background: #6e3629;
+  color: #fed605;
   padding: 20px 22px;
   font-weight: 500;
 }

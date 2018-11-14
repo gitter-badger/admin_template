@@ -116,6 +116,10 @@ table.striped > tbody > tr:nth-child(odd) {
 
 
 thead.table-header {
-  background: #492a24;
-  color: #e7b91c;
+  background: #6e3629;
+  color: #ffffff;
+}
+
+th {
+  border-radius: 0;
 }

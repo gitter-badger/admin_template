@@ -13,6 +13,11 @@
 }
 .dropdown-content:focus {
   outline: 0;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .dropdown-content li:hover, 
@@ -55,6 +60,12 @@ body.keyboard-focused .dropdown-content li:focus {
   left: 0;
   height: 18px;
   transform: none;
+
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .dropdown-trigger {
