@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Iclude this icon font from google fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+</body>
+	
+	<header class="admin-main-header">
+		<h1>Admin Header</h1>
+	</header>	
+	<aside>
+		<ul class="sidenav">
+	    	<div class="sidebar-logo">
+				<h1 class="admin-header">Admin</h1>
+			</div>
+			<li>
+				<a href="index.html">
+					<i class="small material-icons">timeline</i>
+					Overview
+				</a>
+			</li>
+			<li><a href="report.html">
+                <i class="small material-icons">color_lens</i>
+                Reports
+                </a>
+            </li>
+
+			<li>
+				<a href="report.html">
+					<i class="small material-icons">timeline</i>
+					Reports
+				</a>
+			</li>
+			<li class="nod-padding">
+				<!-- Toggle down this menu if click -->
+				<ul class="collapsible collapsible-accordion">
+			    	<li>
+			     	 	<div class="collapsible-header">
+			     	 		<!-- icon header-->
+			     	 		<i class="material-icons">today</i>
+			     	 		<!-- menu name-->
+			     	 		Reports
+			     	 	</div>
+					    <div class="collapsible-body">
+					      	<!-- callapse menu -->
+					      	<ul id="sub-level-side-menu">
+					      		<li><a href="reports-1.html">
+									Reports 1</a></li>
+								<li><a href="reports-2.html">
+									Auto Complete
+								</a></li>
+					      	</ul>
+					    </div>
+				    </li>
+				    <li>
+				      	<div class="collapsible-header">
+				      		<!-- icon menu-->
+				      		<i class="material-icons">place</i>
+				      		<!-- menu name -->
+				      		Pickers
+				      	</div>
+				      	<div class="collapsible-body">
+				      		<!-- callapse menu -->
+				      		<ul id="sub-level-side-menu">
+				      			<li>
+				      				<a href="date-picker1.html">Date picker</a>
+								</li>
+								<li>
+									<a href="time-picker.html">time picker</a>
+								</li>
+				      		</ul>
+				      	</div>
+				    </li>
+				    <li>
+				      	<div class="collapsible-header">
+				      		<!-- icon header-->
+				      		<i class="material-icons">whatshot</i>
+				      		<!-- menu name-->
+				      		Another links 2
+				      	</div>
+				      	<div class="collapsible-body">
+				      		<!-- callapse menu -->
+				      		<ul id="sub-level-side-menu">
+				      			<li>
+				      				<a href="reports-1.html">Another links 1</a>
+								</li>
+								<li>
+									<a href="reports-2.html">Another links 2</a>
+								</li>
+				      		</ul>
+				      	</div>
+				    </li>
+			  	</ul>	
+			</li>
+			<li><a href="reports.html">
+				<i class="small material-icons">today</i>
+				Message
+				</a>
+			</li>
+			<li><a href="#!">
+				<i class="small material-icons">equalizer</i>
+				Sales
+				</a>
+			</li>
+			<li><a href="icons.html">
+                <i class="small material-icons">color_lens</i>
+                Reports
+                </a>
+            </li>
+    	</ul>
+	</aside>
+	
+	<main class="admin-content">
+		<!-- Sidenav menu right--->
+		<div class="sidenav-right">
+			<ul class="sidenav">
+				<li><a data-target="choice_1" class="click-trigger">click 1</a></li>
+				<li><a data-target="choice_2" class="click-trigger">click 2</a></li>
+				<li><a data-target="choice_3" class="click-trigger">click 3</a></li>
+				<li><a data-target="choice_4" class="click-trigger">click 4</a></li>
+				<li><a data-target="choice_5" class="click-trigger">click 5</a></li>
+				<li><a data-target="choice_6" class="click-trigger">click 6</a></li>
+				<li><a data-target="choice_7" class="click-trigger">click 7</a></li>
+				<li><a data-target="choice_8" class="click-trigger">click 8</a></li>
+				<li><a data-target="choice_9" class="click-trigger">click 9</a></li>
+				<li><a data-target="choice_10" class="click-trigger">click 10</a></li>
+				<li><a data-target="choice_11" class="click-trigger">click 11</a></li>
+				<li><a data-target="choice_12" class="click-trigger">click 12</a></li>
+				<li><a data-target="choice_13" class="click-trigger">click 13</a></li>
+				<li><a data-target="choice_14" class="click-trigger">click 14</a></li>
+				<li><a data-target="choice_15" class="click-trigger">click 15</a></li>
+			</ul>
+		</div>
+
+	<!-- Content -->
+		<div class="container">
+				<!-- Content -->	
+			<div class="container">
+				<div id="choice_1" class="row report_choice active">
+					<div class="col s7">
+						<!-- <script>
+						$(function() {
+						var date = $('#datepicker8').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker8" ).datepicker();
+						});
+						
+						$(function() {
+						var date = $('#datepicker9').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker9" ).datepicker();
+						});
+						</script> -->
+						<h5 class="center reports-header">Report 1 (change this title)</h5>
+						<form name="frmReportType" method="POST" target="_BLANK">
+							<!-- Hidden input field -->
+								<input type="hidden" name="report_type" value="1">
+							<!-- -- -->
+							<div class="row">
+								<div class="col s12 input-field">
+									<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+									<label>From</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 input-field">
+									<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+									<label>To</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 input-field">
+									<button type="submit" value="" class="btn small btn-flat">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div id="choice_2" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 2 (change this title)</h5>
+						<form name="frmReportType" method="POST" target="_BLANK">
+							<!-- Hidden input field-->
+							<input type="hidden" name="report_type" value="2">
+							<!-- -- -->
+							<div class="row">
+								<div class="col s12 input-field">
+									<button type="submit" value="" class="btn small btn-flat">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div id="choice_3" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 3 (change this title)</h5>
+					<!-- <script>
+					$(function() {
+					var date = $('#datepicker6').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker6" ).datepicker();
+					});
+					
+					$(function() {
+					var date = $('#datepicker7').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker7" ).datepicker();
+					});
+					</script> -->
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- Hidden input field -->
+							<input type="hidden" name="report_type" value="3">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s12 m6">
+								<div class="input-field">
+									<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+									<label>From</label>
+								</div>
+							</div>
+							<div class="col s12 m6">
+								<div class="input-field">
+									<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+									<label>To</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="accounting_report_type">
+									<option value="1" selected>MEMBERS</option>
+									<option value="2">POINTS</option>
+									<option value="3">DETAILS</option>
+								</select>
+								<label>Report Type</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="region">
+									<option value="all">ALL</option>
+								</select>
+								<label>Region</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="plant">
+									<option value="all">ALL</option>
+								</select>
+								<label>Plant</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="own_type">
+									<option value="all">ALL</option>
+								</select>
+								<label>Ownership Type</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="store_type">
+									<option value="all">ALL</option>
+								</select>
+								<label>Store Type</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="area">
+									<option value="all">ALL</option>
+								</select>
+								<label>Area Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="store">
+									<option value="all">ALL</option>
+								</select>
+								<label>Store Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_4" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 4 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+					
+					<script>
+					$(function() {
+					var date = $('#datepicker4').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker4" ).datepicker();
+					});
+					
+					$(function() {
+					var date = $('#datepicker5').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker5" ).datepicker();
+					});
+					
+					function top25Tab() {
+						window.open("top25.php");
+					}
+					</script> -->
+							
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- Hidden input field -->
+						<input type="hidden" name="report_type" value="4">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s6 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>From</label>
+							</div>
+							<div class="col s6 input-field">
+								<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+								<label>To</label>
+							</div>
+							</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="area">
+									<option value="all">ALL</option>
+								</select>
+								<label>Area Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="store">
+									<option value="all">ALL</option>
+								</select>
+								<label>Store Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="region">
+									<option value="all">ALL</option>
+								</select>
+								<label>Region</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="plant">
+									<option value="all">ALL</option>
+								</select>
+								<label>Plant</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="own_type">
+									<option value="all">ALL</option>
+								</select>
+								<label>Ownership Type</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="store_type">
+									<option value="all">ALL</option>
+								</select>
+								<label>Store Type</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" onclick="top25Tab();" value="" class="btn small btn-flat">Top 25 All-Time</button>
+								<button type="text" value="" class="btn small btn-flat">View Report</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_5" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 5 (change this title)</h5>
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- Hidden input field -->
+						<input type="hidden" name="report_type" value="5">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_6" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 6 (change this title)</h5>
+						<form name="frmReportType" method="POST" target="_BLANK">
+							<div class="row">
+								<div class="col s12 input-field">
+									<select name="store">
+										<option value="all">ALL</option>
+									</select>
+									<label>Store Name</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 input-field">
+									<select name="region">
+										<option value="all">ALL</option>
+									</select>
+									<label>Region</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 input-field">
+								<select name="plant">
+									<option value="all">ALL</option>
+								</select>
+								<label>Plant</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 input-field">
+									<select name="area">
+										<option value="all">ALL</option>
+									</select>
+									<label>Area Name</label>
+								</div>
+							</div>
+							<input type="hidden" name="report_type" value="6">
+							<div class="row">
+								<div class="col s12 input-field">
+									<button type="submit" value="" class="btn small btn-flat">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div id="choice_7" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 7 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+					
+					<script>
+					$(function() {
+					var date = $('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker" ).datepicker();
+					});
+					</script> -->
+					
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- Hidden input field -->
+						<input type="hidden" name="report_type" value="7">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s6 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>From</label>
+							</div>
+							<div class="col s6 input-field">
+								<input type="text" name="ro" class="datepicker" readonly="readonly" required="required">
+								<label>To</label>
+							</div>
+						</div>
+
+						<div class="row">								
+							<div class="col s12 input-field">
+								<select id="store" name="store">
+									<option value="0">-- ALL --</option>
+								</select>
+								<label>Store</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+
+				<div id="choice_8" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 8 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+					
+					<script>
+					$(function() {
+					var date = $('#datepicker2').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker2" ).datepicker();
+					});
+					
+					$(function() {
+					var date = $('#datepicker3').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker3" ).datepicker();
+					});
+					</script> -->
+					
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- Hidden input field -->
+						<input type="hidden" name="report_type" value="8">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s12 m6 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>Start Date</label>
+							</div>
+							<div class="col s12 m6 input-field">
+								<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+								<label>End Date</label>
+							</div>
+						</div>
+						<div clas="row">
+							<div class="col s12 input-field">
+								<select id="store" name="store">
+									<option value="0">-- ALL --</option>
+								</select>
+								<label>Store</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>	
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_9" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 9 (change this title)</h5>
+					<!-- <script type="text/javascript">
+					$(document).ready(function(){
+						$(function() {
+						var date = $('#datepicker18').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker18" ).datepicker();
+						});
+						
+						$(function() {
+						var date = $('#datepicker19').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker19" ).datepicker();
+						});
+						
+							 $( "#item" ).autocomplete({
+							source: 'search_item.php'
+							 });
+					});
+					</script> -->
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- Hidden input field -->
+							<input type="hidden" name="report_type" value="9">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s12 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>Start Date</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+								<label>End Date</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<p>Date range is only applicable to <b class="strong">GP PAY WITHOUT APPROVAL CODE</b> report</p>
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+						
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_10" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 10 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+					
+					<script>
+					$(function() {
+					var date = $('#datepicker10').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker10" ).datepicker();
+					});
+					
+					$(function() {
+					var date = $('#datepicker11').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker11" ).datepicker();
+					});
+					</script> -->
+					
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<input type="hidden" name="report_type" value="10">
+						<div class="row">
+							<div class="col s6 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>Start Date</label>
+							</div>
+							<div class="col s6 input-field">
+								<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+								<label>End Date</label>
+							</div>
+						</div>
+						<h5>Area</h5>
+						<div class="row">
+							<div class="col s12 input-field">
+								<p><label>
+										<input type="checkbox" name="area[]" value="1"/>	
+										<span>SOLUZ RETAIL</span>
+								</label></p>
+								<p><label>
+										<input type="checkbox" name="area[]" value="2"/>	
+										<span>LAGUNA/BATANGAS/CAVITE/L. PINAS/PARANAQUE</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="3"/>	
+									<span>MANDALUYONG / MARIKINA / RIZAL</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="4"/>	
+									<span>PASAY / TAGUIG / MAKATI</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="5"/>	
+									<span>NORTH QC / MARIKINA / RIZAL</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="6"/>	
+									<span>MANILA / VALENZUELA / BULACAN / PAMPANGA</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="7"/>	
+									<span>BATANGAS / LAGUNA 1 / QUEZON PROVINCE</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="8"/>	
+									<span>LAGUNA 2/LAS PINAS/MUNTINLUPA/PARANAQUE</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="9"/>	
+									<span>CAVITE</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="10"/>	
+									<span>PASAY/MANILA/TAGUIG/PATEROS/MAKATI</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="11"/>	
+									<span>MANDALUYONG / SAN JUAN / QC</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="12"/>	
+									<span>PASIG / MARIKINA / RIZAL</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="13"/>	
+									<span>CALOOCAN/MALABON/VALENZUELA/BULACAN</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="14"/>	
+									<span>PAMPANGA / ZAMBALES / BATAAN</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="15"/>	
+									<span>PANGASINAN/BENQUET/LAUNION/ILOCOS/NV/ISAB</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="16"/>	
+									<span>OASIS FOODS</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="17"/>	
+									<span>ALL FRESH 1</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="18"/>	
+									<span>ALL FRESH 2</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="19"/>	
+									<span>HARVEST WHEAT</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="20"/>	
+									<span>DOUGHBAKE</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="21"/>	
+									<span>EARTHGRAIN 1</span>
+								</label></p>
+								<p><label>
+									<input type="checkbox" name="area[]" value="22"/>	
+									<span>EARTHGRAIN 2</span>
+								</label></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" value="" class="btn small btn-small">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_11" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 11 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+					
+					<!-- <script>
+					$(function() {
+					var date = $('#datepicker12').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker12" ).datepicker();
+					});
+					
+					$(function() {
+					var date = $('#datepicker13').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+					$( "#datepicker13" ).datepicker();
+					});
+					</script> -->
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<input type="hidden" name="report_type" value="11">
+						<div class="row">
+							<div class="col s12 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>Start Date</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+								<label>End Date</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_12" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 12 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- Hidden input field -->
+						<input type="hidden" name="report_type" value="12">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="month">
+									<option value="1">JANUARY</option>
+									<option value="2">FEBRUARY</option>
+									<option value="3">MARCH</option>
+									<option value="4">APRIL</option>
+									<option value="5">MAY</option>
+									<option value="6">JUNE</option>
+									<option value="7">JULY</option>
+									<option value="8">AUGUST</option>
+									<option value="9">SEPTEMBER</option>
+									<option value="10">OCTOBER</option>
+									<option value="11">NOVEMBER</option>
+									<option value="12">DECEMBER</option>
+								</select>
+								<label>Month</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>	
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_13" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 13 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<input type="hidden" name="report_type" value="13">
+						<div class="row">
+							<div class="col s12 input-field">
+								<select name="year">
+									<option value="1">2017</option>
+									<option value="2">2018</option>
+								</select>
+								<label>Year</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<button  type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_14" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 14 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+					<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+					
+					<script type="text/javascript">
+					function getRegionList() {
+						var regionList = [];
+						var selectAllRegion = document.getElementById("select_all_region");
+						var checkall = selectAllRegion.checked;
+						var checkboxes = document.getElementsByName("region_list[]");
+						
+						selectAllRegion.addEventListener("change", function(e) {
+							for (var i = 0; i < checkboxes.length; i++) {
+								checkboxes[i].checked = selectAllRegion.checked;
+									 }
+						});
+						
+						for (var i = 0; i < checkboxes.length; i++) {
+								checkboxes[i].addEventListener('change', function(e) {
+										if(this.checked == false){
+												selectAllRegion.checked = false;
+										} 
+										
+										if(document.querySelectorAll('.checkbox:checked').length == checkboxes.length){
+												selectAllRegion.checked = true;
+										}
+								});
+						}
+						
+						$("input[name='region_list[]']:checked").each(function() {
+							regionList.push($(this).val());	
+						});
+								
+						$.ajax({
+							url:"populate_area.php",
+							type:'POST',
+							data:{regionList:regionList,allarea:checkall},
+							success:function(response) {
+								if(response != '') {
+									document.getElementById("area_list").innerHTML=response;
+								} else {
+									document.getElementById("area_list").innerHTML= '';
+									document.getElementById("branch_list").innerHTML= '';
+								}
+							}
+						});
+					}
+					
+					function getStoreList() {
+						var areaList = [];
+						var checkboxes2 = document.getElementsByName("area_list[]");
+						
+						$("input[name='area_list[]']:checked").each(function() {
+							areaList.push($(this).val());	
+						});
+						
+						$.ajax({
+							url:"populate_area.php",
+							type:'POST',
+							data:{areaList:areaList},
+							success:function(response) {
+								if(response != '') {
+									document.getElementById("branch_list").innerHTML=response;
+								} else {
+									document.getElementById("branch_list").innerHTML= '';
+								}
+							}
+						});
+					}
+					
+					$(document).ready(function(){
+						$(function() {
+						var date = $('#datepicker14').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker14" ).datepicker();
+						});
+						
+						$(function() {
+						var date = $('#datepicker15').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker15" ).datepicker();
+						});
+					});
+					</script> -->
+					<form name="frmReportType" method="POST" target="_BLANK">
+						<!-- hidden input field -->
+						<input type="hidden" name="report_type" value="14">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s6 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>Start Date</label>
+							</div>
+							<div class="col s6 input-field">
+								<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+								<label>End Date</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<p>Region</p>
+								<p>
+									<label>
+										<input type='checkbox' id="select_all_region" onclick="return getRegionList()">
+										<span>SELECT ALL</span>
+									</label>											
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<select>
+									<option>REGION LIST</option>
+								</select>
+								<label>Region List</label>
+							</div>
+						</div>
+
+						
+						<div class="row">
+							<div class="col s12 input-field">
+								<!-- populate datea -->
+								<div id="area_list"></div>	
+								<!-- --- -->
+								<label>Area</label>
+							</div>
+						</div>
+
+						
+						<div class="row">
+							<div class="col s12 input-field">
+								<div id="branch_list" style="font-size: 12px"></div>
+								<label>Branch</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+				
+				<div id="choice_15" class="row report_choice">
+					<div class="col s7">
+					<h5 class="center reports-header">Report 15 (change this title)</h5>
+					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+					<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+						<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+					
+					<!-- <script type="text/javascript">
+					$(document).ready(function(){
+						$(function() {
+						var date = $('#datepicker16').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker16" ).datepicker();
+						});
+						
+						$(function() {
+						var date = $('#datepicker17').datepicker({ dateFormat: 'yy-mm-dd' }).val();
+						$( "#datepicker17" ).datepicker();
+						});
+						
+							 $( "#item" ).autocomplete({
+							source: 'search_item.php'
+							 });
+					});
+					</script> -->
+					
+					<form name="frmReportType2" method="POST" target="_BLANK" onsubmit="return validateForm();">
+						<!-- Hidden input field -->
+						<input type="hidden" name="report_type" value="15">
+						<!-- -- -->
+						<div class="row">
+							<div class="col s12 input-field">
+								<input type="text" name="item" id="item" autofocus>
+								<label for="item">Product Name <em class="required">(required)</em></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col s12 input-field">
+								<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
+								<label>Start Date</label>		
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
+								<label>End Date</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 input-field">
+								<button type="submit" value="" class="btn small btn-flat">Submit</button>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>		  
+			</div>
+		</div>
+	</main>
+
+	<footer>
+	<!-- footer -->	
+	</footer>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/materialize.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script>
+	/* 
+		Got to ASSETS/JS/INIT.JS for date picker initialization
+	*/
+	</script>
+</html>
