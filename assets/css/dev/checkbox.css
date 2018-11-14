@@ -206,3 +206,9 @@
     background-color: #949494;
     border-color: #949494;
   }
+
+.hide-region {
+  display: none;
+}
+
+
