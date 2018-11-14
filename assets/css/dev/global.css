@@ -26,7 +26,7 @@ html {
  							"Helvetica Neue",
  							sans-serif;
  	font-weight: normal;
-  color: rgba(0,0,0,0.87);
+  color: rgb(110, 54, 41);
 }
 *, *:before, *:after {
  box-sizing: inherit;
@@ -581,7 +581,7 @@ path[Attributes Style] {
 
 /*INPUT FIELD LABEL*/
 .input-field > label {
-    color: #9e9e9e;
+    color: #6e3629;
     position: absolute;
     top: 0;
     left: 0;
@@ -901,13 +901,13 @@ span.rep-card-title {
 Goldilocks admin home page
 */
 .goldi-admin-nav {
-  background: #492a24;  
+  background: #6e3629;
   height: 40px;
   line-height: 40px;
 }
 
 .goldi-header-banner {
-  background:  #e0b31c;
+  background: #fed605;
 }
 
 .goldi-header .goldi-admin-nav h1 {
@@ -929,13 +929,19 @@ Goldilocks admin home page
 }
 
 .goldi-header-banner p {
-  position: absolute;
-  bottom: 0;
-  right: 217px;
-  font-size: 1.6em;
-  margin: 0 0 5px 0;
+  display: block;
+  /* position: absolute; */
+  /* bottom: 0; */
+  right: 12.5%;
+  font-size: 18px;
+  color: #6e3629;
+  font-weight: 500;
+  margin: 65px 0 5px 0;
   text-transform: uppercase;
-  color: #492a24;
+  color: #6e3629;
+  width: 200px;
+  float: right;
+  text-align: right;
 }
 
 .hide-this {
@@ -947,7 +953,7 @@ Goldilocks admin home page
 }
 
 .admin-home-sidenav .hide-this h5{
-  background: #492a24;
+  background: #6e3629;
   color: white;
   font-size: 18px;
   padding: 10px;
@@ -958,6 +964,7 @@ Goldilocks admin home page
 li.last {
   margin-bottom: 100px;
 }
+
 
 
 
