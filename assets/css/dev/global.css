@@ -575,8 +575,8 @@ path[Attributes Style] {
 /*INPUT FIELD*/
 .input-field {
     position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
 }
 
 /*INPUT FIELD LABEL*/
@@ -677,9 +677,17 @@ textarea.materialize-textarea {
     border-bottom: 1px solid #9e9e9e;
     border-radius: 0;
     outline: none;
+    /*
+    change input height 
     height: 3rem;
+    */
+    height: 2rem;
     width: 100%;
+    /*
+    change input text font-size
     font-size: 12px;
+    */
+    font-size: 14px;
     margin: 0 0 8px 0;
     padding: 0;
     -webkit-box-shadow: none;
@@ -722,25 +730,6 @@ select {
 ul:not(.browser-default) {
     padding-left: 0;
     list-style-type: none;
-}
-
-
-.container {
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-}
-
-@media only screen and (min-width: 601px) {
-	.container {
-    width: 85%;
-	}
-}
-
-@media only screen and (min-width: 993px) {
-	.container {
-    width: 70%;
-	}
 }
 
 a {
@@ -916,10 +905,15 @@ small {
   font-size: 16px;
 }
 
+
 span.rep-card-title {
   font-weight: 500;
+  font-size: 14px;
 }
 
+span.name {
+  font-size: 0.9rem;
+}
 
 /*
 Goldilocks admin home page
@@ -999,4 +993,25 @@ li.last {
 }
 
 
+form .row {
+  margin-bottom: 5px;
+}
 
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    /*width: 90%*/
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 1220px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 1220px;
+    }
+}
