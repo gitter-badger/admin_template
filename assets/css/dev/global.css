@@ -34,6 +34,22 @@ html {
 
 html,body {
 	background:  #d8d8d817;
+
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p, h1,h2,h3,h4,h5,h6, span, strong, em {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -992,7 +1008,10 @@ li.last {
   color: #fff;
 }
 
-
+/*
+  Newly added
+  ------start
+*/
 form .row {
   margin-bottom: 5px;
 }
@@ -1030,4 +1049,21 @@ span.sub-titlle {
 
 .sidebar-logo .profile {
     padding: 15px;
+}
+
+.form {
+    margin-top: 20px;
+}
+/*
+  Newly added
+  ------ end 
+*/
+
+
+li a:hover {
+  cursor: pointer;
+}
+
+li i:hover {
+  cursor: pointer;
 }
