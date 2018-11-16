@@ -192,15 +192,16 @@
 	        $(function() {
 	        	/*page*/
 				var CurrPage = 4;
-				
+
 	            $('#pagination-long').materializePagination({
 	                align: 'center',
-	                lastPage: 10,
+	                lastPage: 100,
 	                firstPage: 1,
 					currentPage:CurrPage,
 	                useUrlParameter: false,
 	                onClickCallback: function(requestedPage) {
-	                    console.log('Requested page from #pagination-long: ' + requestedPage);
+
+	                    console.log('Requested page ' + requestedPage);
 	                }
 	            });
 	        });
