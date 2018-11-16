@@ -1015,3 +1015,19 @@ form .row {
         width: 1220px;
     }
 }
+
+
+p.admin-header {
+    margin: 0;
+    font-size: 14px;
+}
+
+span.sub-titlle {
+    color: #8c8989;
+    font-size: 11px;
+}
+
+
+.sidebar-logo .profile {
+    padding: 15px;
+}
