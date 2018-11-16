@@ -171,7 +171,10 @@
 				</div>
 			</div>
 
-			<div id="pagination-long"></div>
+			<div id="pagination"></div>
+
+			<p> add div "< div id="pagination-long">< div >"</p>
+			<p> Check script inside 'gtizen.html'</p>
 		</div>
 		<!-- 
 			Only show this error message if have error
@@ -193,12 +196,14 @@
 	        	/*page*/
 				var CurrPage = 4;
 
-	            $('#pagination-long').materializePagination({
-	                align: 'center',
-	                lastPage: 100,
-	                firstPage: 1,
-					currentPage:CurrPage,
-	                useUrlParameter: false,
+	            $('#pagination').materializePagination({
+	                align: 'center', //Center align the pagination
+	                lastPage: 100, //Last page click
+	                firstPage: 1, //Fire Page click
+					currentPage:CurrPage, //page per display
+	                
+	                useUrlParameter: false, 
+	                // on click callback
 	                onClickCallback: function(requestedPage) {
 
 	                    console.log('Requested page ' + requestedPage);
