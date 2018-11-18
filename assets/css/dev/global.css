@@ -1000,11 +1000,12 @@ li.last {
 
 
 .error-message {
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   position: fixed;
   background: #FF5722;
   top: 64px;
   color: #fff;
+  left: 250px;
 }
 
 /*
