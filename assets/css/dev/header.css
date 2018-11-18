@@ -7,12 +7,12 @@
 
 header.admin-main-header{
 	position: fixed;
-	width: calc(100% - 300px);
+	width: calc(100% - 250px);
 	background: #fff;
     border-bottom: 1px solid rgba(0,0,0,0.14);
     box-shadow: none;
     height: 64px;
-    left: 300px;
+    left: 250px;
     z-index: 1;
 }
 
@@ -24,7 +24,7 @@ main.admin-content {
 }
 main.admin-content,
 footer {
-	margin-left: 300px;	
+	margin-left: 250px;	
 }
 
 header h1 {

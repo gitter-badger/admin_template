@@ -50,3 +50,7 @@
     white-space: nowrap;
   }
 }
+
+.pagination li.active {
+  background-color: #6e3629;
+}

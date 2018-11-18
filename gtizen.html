@@ -16,25 +16,16 @@
 	</header>	
 	<aside>
 		<ul class="sidenav">
-	    	<div class="sidebar-logo">
-				<h1 class="admin-header">Admin</h1>
+    	<div class="sidebar-logo">
+    			<div class="profile">
+					<p class="admin-header">Admin example name</p>
+					<span class="sub-titlle">You are login as</span>
+				</div>
 			</div>
 			<li>
 				<a href="index.html">
 					<i class="small material-icons">timeline</i>
 					Overview
-				</a>
-			</li>
-			<li><a href="report.html">
-                <i class="small material-icons">color_lens</i>
-                Reports
-                </a>
-            </li>
-
-			<li>
-				<a href="report.html">
-					<i class="small material-icons">timeline</i>
-					Reports
 				</a>
 			</li>
 			<li class="nod-padding">
@@ -50,70 +41,58 @@
 					    <div class="collapsible-body">
 					      	<!-- callapse menu -->
 					      	<ul id="sub-level-side-menu">
-					      		<li><a href="reports-1.html">
-									Reports 1</a></li>
-								<li><a href="reports-2.html">
-									Auto Complete
-								</a></li>
+								<li><a data-target="choice_1" class="click-trigger">click 1</a></li>
+								<li><a data-target="choice_2" class="click-trigger">click 2</a></li>
+								<li><a data-target="choice_3" class="click-trigger">click 3</a></li>
+								<li><a data-target="choice_4" class="click-trigger">click 4</a></li>
+								<li><a data-target="choice_5" class="click-trigger">click 5</a></li>
+								<li><a data-target="choice_6" class="click-trigger">click 6</a></li>
+								<li><a data-target="choice_7" class="click-trigger">click 7</a></li>
+								<li><a data-target="choice_8" class="click-trigger">click 8</a></li>
+								<li><a data-target="choice_9" class="click-trigger">click 9</a></li>
+								<li><a data-target="choice_10" class="click-trigger">click 10</a></li>
+								<li><a data-target="choice_11" class="click-trigger">click 11</a></li>
+								<li><a data-target="choice_12" class="click-trigger">click 12</a></li>
+								<li><a data-target="choice_13" class="click-trigger">click 13</a></li>
+								<li><a data-target="choice_14" class="click-trigger">click 14</a></li>
+								<li><a data-target="choice_15" class="click-trigger">click 15</a></li>
 					      	</ul>
 					    </div>
 				    </li>
-				    <li>
-				      	<div class="collapsible-header">
-				      		<!-- icon menu-->
-				      		<i class="material-icons">place</i>
-				      		<!-- menu name -->
-				      		Pickers
-				      	</div>
-				      	<div class="collapsible-body">
-				      		<!-- callapse menu -->
-				      		<ul id="sub-level-side-menu">
-				      			<li>
-				      				<a href="date-picker1.html">Date picker</a>
-								</li>
-								<li>
-									<a href="time-picker.html">time picker</a>
-								</li>
-				      		</ul>
-				      	</div>
-				    </li>
-				    <li>
-				      	<div class="collapsible-header">
-				      		<!-- icon header-->
-				      		<i class="material-icons">whatshot</i>
-				      		<!-- menu name-->
-				      		Another links 2
-				      	</div>
-				      	<div class="collapsible-body">
-				      		<!-- callapse menu -->
-				      		<ul id="sub-level-side-menu">
-				      			<li>
-				      				<a href="reports-1.html">Another links 1</a>
-								</li>
-								<li>
-									<a href="reports-2.html">Another links 2</a>
-								</li>
-				      		</ul>
-				      	</div>
-				    </li>
 			  	</ul>	
 			</li>
-			<li><a href="reports.html">
-				<i class="small material-icons">today</i>
-				Message
+			<li>
+				<a href="gtizen.html">
+					<i class="small material-icons">timeline</i>
+					GTiZEN INQUIRY
 				</a>
 			</li>
-			<li><a href="#!">
-				<i class="small material-icons">equalizer</i>
-				Sales
-				</a>
+			<li class="nod-padding">
+				<!-- Toggle down this menu if click -->
+				<ul class="collapsible collapsible-accordion">
+				  <li>
+				  	<div class="collapsible-header">
+							<!-- icon menu-->
+							<i class="material-icons">place</i>
+							<!-- menu name -->
+							Documentation
+						</div>
+						<div class="collapsible-body">
+							<!-- callapse menu -->
+							<ul id="sub-level-side-menu">
+								<li><a href="date-picker1.html">Date picker</a></li>
+								<li><a href="time-picker.html">time picker</a></li>
+								<li><a href="checkbox.html">Check Box</a></li>
+								<li><a href="icons.html">Icons</a></li>
+								<li><a href="auto-complete.html">Auto complete</a></li>
+								<li><a href="selects.html">Selects</a></li>
+							</ul>
+				  	</div>
+				  </li>
+				</ul>	
 			</li>
-			<li><a href="icons.html">
-                <i class="small material-icons">color_lens</i>
-                Reports
-                </a>
-            </li>
-    	</ul>
+			<li class="last"></li>
+		</ul>
 	</aside>
 	
 	<main class="admin-content">
@@ -136,7 +115,74 @@
 			<!-- 
 				Only show this div if success else hide
 			-->
-			<em>Only show this if success else always hide</em>
+			<div class="row">
+				<div class="col s12 m4">
+					<h6 class="card-header">CARD INFO</h6>
+					<input type='hidden' name = 'card_number' value='$q'>
+					<div class="section">
+						<div class="row">
+							<span class="rep-card-title col s12">$mobile_number_string</span>
+						</div>
+						<div class="row">
+							<span class="rep-card-title name col s4">Name</span>
+							<span class="name col s8">Sample long name Example</span>
+						</div>
+						<div class="row">
+							<span class="rep-card-title name col s4">Points</span>
+							<span class="name col s8">$Prompt</span>
+						</div>
+						<div class="row">
+							<span class="rep-card-title name col s4">Birthday</span>
+							<span class="name col s8">$bday</span>
+						</div>
+						<div class="row">
+							<span class="rep-card-title name col s4">Register Date</span>
+							<span class="name col s8">$reg_date</span>
+						</div>
+						<div class="row">
+							<span class="rep-card-title name col s4">Expiry Date</span>
+							<span class="name col s8">$exp_date</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<h6 class="card-header">REDEMTION FORM</h6>
+					<div class="section">
+						<form name='frm_redeem_points_process' method='post'>
+							<div class="row">
+								<div class="col s12 input-field">
+									<input id="rd-points" type='text' name='amount' size='20'>
+									<label for="rd-points">Points</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 input-field">
+									<button type='submit' class='btn small btn-flat' value=''>Redeem Points</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<h6 class="card-header">MORE INFO</h6>
+					<div class="section">
+						<div class="row">
+							<span class="rep-card-title name col s4">Issued By</span>
+							<span class="name col s8">name example long name</span>
+						</div>
+						<div class="row">
+							<span class="rep-card-title name col s4">Registered Thru</span>
+							<span class="name col s8">my example long name</span>
+						</div>
+						<div class="row">
+							<span class="rep-card-title name col s4">My Favorites</span>
+							<span class="name col s8">$name</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="results-wrapper">
 				<div class="row">
 					<div class="col s12">
@@ -173,9 +219,6 @@
 
 			<div id="pagination"></div>
 
-			<p> add div "< div id="pagination-long">< div >"</p>
-			<p> Check script inside 'gtizen.html'</p>
-		</div>
 		<!-- 
 			Only show this error message if have error
 		-->
