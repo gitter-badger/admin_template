@@ -966,11 +966,10 @@ Goldilocks admin home page
   display: block;
   /* position: absolute; */
   /* bottom: 0; */
-  right: 12.5%;
   font-size: 18px;
   color: #6e3629;
   font-weight: 500;
-  margin: 65px 0 5px 0;
+  margin: 65px 15px 5px 0;
   text-transform: uppercase;
   color: #6e3629;
   width: 200px;
@@ -1025,13 +1024,13 @@ form .row {
 
 @media only screen and (min-width: 601px) {
   .container {
-    width: 85%;
+    width: 992px;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 95%;
+    width: 992px;
   }
 }
 
@@ -1067,4 +1066,15 @@ li a:hover {
 
 li i:hover {
   cursor: pointer;
+}
+
+
+
+.padd-bottom.container {
+  background: #fed605;
+  height: 90px;
+}
+
+.goldi-admin-nav .container{
+  background: #6e3629;
 }
