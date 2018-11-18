@@ -192,6 +192,73 @@
 					              <th>Name</th>
 					              <th>Item Name</th>
 					              <th>Item Price</th>
+					              <th class="right-align">Action</th>
+					          </tr>
+					        </thead>
+
+					        <tbody>
+					          <tr>
+					            <td>Alvin</td>
+					            <td>Eclair</td>
+					            <td>$0.87</td>
+					            <td class='right-align'>
+					            	<a href="#view-more" class="btn btn-flat mini modal-trigger"> View</a>
+					        	</td>
+					          </tr>
+					          <tr>
+					            <td>Alan</td>
+					            <td>Jellybean</td>
+					            <td>$3.76</td>
+					            <td class='right-align'>
+					            	<a href="#view-more" class="btn btn-flat mini modal-trigger"> View</a>
+					        	</td>
+					          </tr>
+					          <tr>
+					            <td>Jonathan</td>
+					            <td>Lollipop</td>
+					            <td>$7.00</td>
+					            <td class='right-align'>
+					            	<a href="#view-more" class="btn btn-flat mini modal-trigger"> View</a>
+					        	</td>
+					          </tr>
+					        </tbody>
+					    </table>
+					</div>
+				</div>
+			</div>
+
+			<div id="pagination"></div>
+
+		<!-- 
+			Only show this error message if have error
+		-->
+		<div class="error-message">
+			<div class="container">
+				<p class="center errors">Card number has been declared lost. Redemtion failed <em>Only show this if success else always hide</em></p>
+			</div>
+		</div>
+	</main>
+
+	<div id="view-more" class="modal">
+			  	<div class="modal-header">
+			  		<h5 class="center">
+			  			Report Results
+						<span class="modal-close right"><i class="material-icons">close</i></span>
+					</h5>
+				</div>	
+			    <div class="modal-content">
+				      <div class="container">
+						<div class="center">
+							
+						</div>
+						<!-- query result in table -->
+						<!--  -->
+						<table class="striped">
+					        <thead class="table-header">
+					          <tr>
+					              <th>Name</th>
+					              <th>Item Name</th>
+					              <th>Item Price</th>
 					          </tr>
 					        </thead>
 
@@ -212,22 +279,20 @@
 					            <td>$7.00</td>
 					          </tr>
 					        </tbody>
-					    </table>
+					      </table>
 					</div>
-				</div>
-			</div>
-
-			<div id="pagination"></div>
-
-		<!-- 
-			Only show this error message if have error
-		-->
-		<div class="error-message">
-			<div class="container">
-				<p class="center errors">Card number has been declared lost. Redemtion failed <em>Only show this if success else always hide</em></p>
-			</div>
-		</div>
-	</main>
+			    </div>
+			    <div class="modal-footer">
+			    	<div class=container>
+			    		<div class="row">
+			    			<div class="input-field">
+				      		<!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+				      		<a href="#!" class="waves-effect waves-green btn-flat"><i class="material-icons">file_download</i>Download</a>
+				      		</div>
+			      		</div>
+			  		</div>
+			    </div>
+			  </div>
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/materialize.js"></script>
 	<script src="assets/js/paginate.js"></script>
