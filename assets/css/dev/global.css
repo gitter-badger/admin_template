@@ -708,6 +708,7 @@ textarea.materialize-textarea {
     change input text font-size
     font-size: 12px;
     */
+    color: #6c3726;
     font-size: 14px;
     margin: 0 0 8px 0;
     padding: 2px 0px 0px 7px;
@@ -923,7 +924,7 @@ small {
   color: white;
   text-align: center;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 
@@ -933,7 +934,7 @@ span.rep-card-title {
 }
 
 span.name {
-  font-size: 0.8rem;
+  font-size: 12px;
 }
 
 /*

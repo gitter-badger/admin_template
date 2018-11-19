@@ -19,6 +19,7 @@ table.striped > tbody > tr:nth-child(odd) {
 
 table.striped > tbody > tr > td {
   border-radius: 0;
+  font-size: 12px;
 }
 
 table.highlight > tbody > tr {
@@ -127,7 +128,7 @@ thead.table-header {
 .striped >thead >tr >th {
   border-radius: 0;
   font-weight: 200;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   text-transform: uppercase;
   padding: 10px;
