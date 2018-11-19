@@ -5,10 +5,7 @@
     box-shadow: 0 6px 20px 0 rgba(255, 110, 64, 0.5);
 }*/
 
-header.admin-main-header{
-	position: fixed;
-	width: calc(100% - 250px);
-	background: #fff;
+.main-header{
     border-bottom: 1px solid rgba(0,0,0,0.14);
     box-shadow: none;
     height: 64px;
@@ -18,8 +15,8 @@ header.admin-main-header{
 
 main.admin-content {
 	position: relative;
-	margin-top: 64px;
-	padding-top: 50px;
+	/*margin-top: 64px;
+	padding-top: 50px;*/
 	margin-bottom: 100px;
 }
 main.admin-content,
@@ -27,12 +24,12 @@ footer {
 	margin-left: 250px;	
 }
 
-header h1 {
+.main-header h1 {
 	margin: 0;
-	color: #9E9E9E;;
+	color: #6e3629;
 	text-align: center;
 	padding: 12px;
-	font-weight: lighter;
+	font-weight: 400;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	line-height: 40px;

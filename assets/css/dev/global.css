@@ -595,11 +595,16 @@ path[Attributes Style] {
     margin-bottom: 0rem;
 }
 
+.input-field p {
+  margin: 1px;
+}
+
 /*INPUT FIELD LABEL*/
 .input-field > label {
     color: #6e3629;
     position: absolute;
-    top: 0;
+    /*top: 0;*/
+    top: -14px;
     left: 0;
     font-size: 1rem;
     cursor: text;
@@ -697,7 +702,7 @@ textarea.materialize-textarea {
     change input height 
     height: 3rem;
     */
-    height: 2rem;
+    height: auto;
     width: 100%;
     /*
     change input text font-size
@@ -705,7 +710,7 @@ textarea.materialize-textarea {
     */
     font-size: 14px;
     margin: 0 0 8px 0;
-    padding: 0;
+    padding: 2px 0px 0px 7px;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-box-sizing: content-box;
@@ -758,7 +763,7 @@ a {
   font-size: 2rem;
   -webkit-transition: color .2s;
   transition: color .2s;
-  top: .5rem;
+  top: -.5rem;
   color: #492a24;
 }
 
@@ -1000,12 +1005,24 @@ li.last {
 
 
 .error-message {
-  width: calc(100% - 250px);
-  position: fixed;
+   width: calc(100% - 250px);
+  /* position: fixed; */
   background: #FF5722;
-  top: 64px;
+  height: 64px;
   color: #fff;
   left: 250px;
+  line-height: 64px;
+  width: 100%;
+
+  /*
+  Uncomment this to hide error by default 
+  display: none;
+  */ 
+ 
+}
+
+.error-message p {
+  margin: 0;
 }
 
 /*
@@ -1032,9 +1049,15 @@ form .row {
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (max-width: 992px) {
   .container {
     width: 992px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 1280px;
   }
 }
 
@@ -1085,8 +1108,8 @@ li i:hover {
 
 
 a.btn.mini {
-    font-size: 12px;
-    padding: 5px 15px 5px 15px;
+    font-size: 11px;
+    padding: 4px 15px 4px 15px;
     display: inline;
     width: 100%;
     /* height: 18px; */
@@ -1101,3 +1124,12 @@ a.btn.mini {
 .modal-close.right:hover {
   cursor: pointer;
 }
+
+.fave ul {
+  margin: 0;
+}
+
+.input-field>label:not(.label-icon).active {
+  margin-top: 11px;
+}
+

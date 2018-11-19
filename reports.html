@@ -23,11 +23,38 @@
 					Overview
 				</a>
 			</li>
-			<li>
-				<a href="reports.html">
-					<i class="small material-icons">today</i>
-					Reports
-				</a>
+			<li class="nod-padding">
+				<!-- Toggle down this menu if click -->
+				<ul class="collapsible collapsible-accordion">
+			    	<li>
+			     	 	<div class="collapsible-header">
+			     	 		<!-- icon header-->
+			     	 		<i class="material-icons">today</i>
+			     	 		<!-- menu name-->
+			     	 		Report
+			     	 	</div>
+					    <div class="collapsible-body">
+					      	<!-- callapse menu -->
+					      	<ul id="sub-level-side-menu">
+								<li><a data-target="choice_1" class="click-trigger">click 1</a></li>
+								<li><a data-target="choice_2" class="click-trigger">click 2</a></li>
+								<li><a data-target="choice_3" class="click-trigger">click 3</a></li>
+								<li><a data-target="choice_4" class="click-trigger">click 4</a></li>
+								<li><a data-target="choice_5" class="click-trigger">click 5</a></li>
+								<li><a data-target="choice_6" class="click-trigger">click 6</a></li>
+								<li><a data-target="choice_7" class="click-trigger">click 7</a></li>
+								<li><a data-target="choice_8" class="click-trigger">click 8</a></li>
+								<li><a data-target="choice_9" class="click-trigger">click 9</a></li>
+								<li><a data-target="choice_10" class="click-trigger">click 10</a></li>
+								<li><a data-target="choice_11" class="click-trigger">click 11</a></li>
+								<li><a data-target="choice_12" class="click-trigger">click 12</a></li>
+								<li><a data-target="choice_13" class="click-trigger">click 13</a></li>
+								<li><a data-target="choice_14" class="click-trigger">click 14</a></li>
+								<li><a data-target="choice_15" class="click-trigger">click 15</a></li>
+					      	</ul>
+					    </div>
+				    </li>
+			  	</ul>	
 			</li>
 			<li>
 				<a href="gtizen.html">
@@ -65,224 +92,6 @@
 	
 	<main class="admin-content">
 	<!-- Content -->
-		<div id="overview-container">
-
-			<div class="main-header">
-				<h1>Overview</h1>
-			</div>
-			<div class="container">
-				<div class="row">
-				    <div class="col s12 m4">
-						<div class="chart card">
-						<div class="card-content">
-								<span class="title">Revenue</span>
-								<canvas id="lineChart" width="400" height="200"></canvas>
-							</div>		
-						</div>
-					</div>
-
-					<div class="col s12 m4">
-						<div class="chart card">
-							<div class="card-content">
-								<span  class="title">Stocks</span>
-								<canvas id="barChart" width="400" height="200"></canvas>	
-							</div>
-						</div>
-					</div>
-
-					<div class="col s12 m4">
-						<div class="chart card">
-							<div class="card-content">
-								<span  class="title">Views</span>
-								<canvas id="line2-lineChart" width="400" height="200"></canvas>
-								<!-- preloader here -->
-								<div class="lds-ripple chart-loader">
-								  	<div></div><div></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-		  		</div>
-
-				<div class="row">
-		  			<div class="column col s12">
-						<div class="chart card">
-							<div class="card-content">
-								<span class="title">Votest</span>	
-								<canvas id="full-lineChart" width="400" height="170"></canvas>	
-							</div>
-						</div>
-					</div>
-		  		</div>
-
-				<div class="">
-			  		<h6>Buttons</h6>
-			  		<a class="btn small btn-flat">Button small Default</a>
-					<a class="btn btn-primary">Button Primary</a>
-					<a class="btn btn-success">Button Success</a>
-					<a class="btn btn-danger">Button Danger</a>
-
-					<button type="submit" class="btn-flat">
-						<i class="material-icons">file_download</i>Download
-					</button>
-		  		</div>
-
-		  		<h6>Preloader</h6>
-				<div class="lds-ripple">
-				  	<div></div><div></div>
-				</div>
-				
-				<div class="alternate-preloader">
-					<svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-					  	viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-						<path fill="#6e3629" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
-					  		c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
-					    	<animateTransform 
-					         attributeName="transform" 
-					         attributeType="XML" 
-					         type="rotate"
-					         dur="2s" 
-					         from="0 50 50"
-					         to="360 50 50" 
-					         repeatCount="indefinite" />
-					  	</path>
-						<path fill="#6e3629" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
-						  c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
-						    <animateTransform 
-						         attributeName="transform" 
-						         attributeType="XML" 
-						         type="rotate"
-						         dur="1s" 
-						         from="0 50 50"
-						         to="-360 50 50" 
-						         repeatCount="indefinite" />
-					  	</path>
-						<path fill="#fed605" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
-						  L82,35.7z">
-						      <animateTransform 
-						         attributeName="transform" 
-						         attributeType="XML" 
-						         type="rotate"
-						         dur="2s" 
-						         from="0 50 50"
-						         to="360 50 50" 
-						         repeatCount="indefinite" />
-						</path>
-					</svg>
-				</div>
-
-				<h6> Forms</h6>
-			  	<div class="row">
-			  		<div class="col s12">
-				  		<form class="sample-form">
-					      	<div class="row">
-					        	<div class="input-field col  s12 m12">
-					        		<i class="material-icons prefix">account_circle</i>
-					          		<input id="username" type="text" class="validate">
-					          		<label for="username">Username</label>
-					        	</div>
-					      	</div>
-					      	<div class="row">
-					        	<div class="input-field col s12 m12">
-					        		<i class="material-icons prefix">lock_open</i>
-					          		<input id="password" type="password" class="validate">
-					          		<label for="password">Password</label>
-					        	</div>
-					      	</div>
-					      	<div class="row">
-					        	<div class="input-field col s12 m6">
-									<div class="input-field">
-										<i class="material-icons prefix">event</i>
-										<input id="birth-of-date" type="text" class="datepicker">
-										<label for="birth-of-date">Date of birth</label>
-									</div>
-					        	</div>
-					        	<div class="input-field col s12 m6">
-					        		<div class="input-field">
-					        			<i class="material-icons prefix">timer</i>
-										<input id="time-picker" type="text" class="timepicker">
-										<label for="time-picker">Time</label>
-									</div>
-					        	</div>
-					        </div>
-					        <div class="row">
-					        	<div class="input-field col s12 m4">
-									<i class="material-icons prefix">location_on</i>
-								    <select id="select-options">
-								      	<option value="" disabled selected>Choose your option</option>
-								        <option value="one">Option 1</option>
-								        <option value="two">Option 2</option>
-								        <option value="three">Option 3</option>
-								        <option value="four">Option 4</option>
-								    </select>
-								    <label>Select option</label>
-								</div>
-					        </div>
-				  		</form>
-			  		</div>
-			  	</div>
-
-		  		<h6>MODAL POPUP</h6>
-		 		<a class="waves-effect waves-light btn modal-trigger" href="#pop-up">Modal</a>
-				  	<!-- Modal Structure -->
-			  	<div id="pop-up" class="modal">
-				  	<div class="modal-header">
-				  		<h5 class="center">
-				  			Report Results
-							<span class="modal-close right"><i class="material-icons">close</i></span>
-						</h5>
-					</div>
-
-				    <div class="modal-content">
-					      <div class="container">
-							<div class="center">
-							</div>
-							<!-- query result in table -->
-							<!--  -->
-							<table class="striped">
-						        <thead class="table-header">
-						          <tr>
-						              <th>Name</th>
-						              <th>Item Name</th>
-						              <th>Item Price</th>
-						          </tr>
-						        </thead>
-
-						        <tbody>
-						          <tr>
-						            <td>Alvin</td>
-						            <td>Eclair</td>
-						            <td>$0.87</td>
-						          </tr>
-						          <tr>
-						            <td>Alan</td>
-						            <td>Jellybean</td>
-						            <td>$3.76</td>
-						          </tr>
-						          <tr>
-						            <td>Jonathan</td>
-						            <td>Lollipop</td>
-						            <td>$7.00</td>
-						          </tr>
-						        </tbody>
-						      </table>
-						</div>
-				    </div>
-				    <div class="modal-footer">
-				    	<div class=container>
-				    		<div class="row">
-				    			<div class="input-field">
-					      		<!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
-					      		<a href="#!" class="waves-effect waves-green btn-flat"><i class="material-icons">file_download</i>Download</a>
-					      		</div>
-				      		</div>
-				  		</div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-
 		<!-- choices container -->
 		<div id="reports-container">
 			<div class="main-header">
@@ -308,15 +117,13 @@
 								<input type="hidden" name="report_type" value="1">
 							<!-- -- -->
 							<div class="row">
-								<div class="col s12 input-field">
-									<input type="text" name="from" class="datepicker" readonly="readonly" required="required">
-									<label>From</label>
+								<div class="col s6 input-field">
+									<input id="r1-from" type="text" name="from" class="datepicker" readonly="readonly" required="required">
+									<label for="r1-from">From</label>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col s12 input-field">
-									<input type="text" name="to" class="datepicker" readonly="readonly" required="required">
-									<label>To</label>
+								<div class="col s6 input-field">
+									<input id="r2-from" type="text" name="to" class="datepicker" readonly="readonly" required="required">
+									<label for="r2-from">To</label>
 								</div>
 							</div>
 							<div class="row">
@@ -329,7 +136,7 @@
 				</div>
 				
 				<div id="choice_2" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 2 (change this title)</h5>
 						<form name="frmReportType" method="POST" target="_BLANK">
 							<!-- Hidden input field-->
@@ -345,7 +152,7 @@
 				</div>
 				
 				<div id="choice_3" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 3 (change this title)</h5>
 					<!-- <script>
 					$(function() {
@@ -444,7 +251,7 @@
 				</div>
 				
 				<div id="choice_4" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 4 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -539,7 +346,7 @@
 				</div>
 				
 				<div id="choice_5" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 5 (change this title)</h5>
 					<form name="frmReportType" method="POST" target="_BLANK">
 						<!-- Hidden input field -->
@@ -601,7 +408,7 @@
 				</div>
 				
 				<div id="choice_7" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 7 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -647,7 +454,7 @@
 				</div>
 
 				<div id="choice_8" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 8 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -697,7 +504,7 @@
 				</div>
 				
 				<div id="choice_9" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 9 (change this title)</h5>
 					<!-- <script type="text/javascript">
 					$(document).ready(function(){
@@ -744,7 +551,7 @@
 				</div>
 				
 				<div id="choice_10" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 10 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -779,94 +586,112 @@
 						</div>
 						<div class="row">
 							<div class="col s12 input-field">
-								<p><label>
+								<div class="row">
+									<div class="col s6">
+										<p><label>
 										<input type="checkbox" name="area[]" value="1"/>	
 										<span>SOLUZ RETAIL</span>
-								</label></p>
-								<p><label>
-										<input type="checkbox" name="area[]" value="2"/>	
-										<span>LAGUNA/BATANGAS/CAVITE/L. PINAS/PARANAQUE</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="3"/>	
-									<span>MANDALUYONG / MARIKINA / RIZAL</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="4"/>	
-									<span>PASAY / TAGUIG / MAKATI</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="5"/>	
-									<span>NORTH QC / MARIKINA / RIZAL</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="6"/>	
-									<span>MANILA / VALENZUELA / BULACAN / PAMPANGA</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="7"/>	
-									<span>BATANGAS / LAGUNA 1 / QUEZON PROVINCE</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="8"/>	
-									<span>LAGUNA 2/LAS PINAS/MUNTINLUPA/PARANAQUE</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="9"/>	
-									<span>CAVITE</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="10"/>	
-									<span>PASAY/MANILA/TAGUIG/PATEROS/MAKATI</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="11"/>	
-									<span>MANDALUYONG / SAN JUAN / QC</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="12"/>	
-									<span>PASIG / MARIKINA / RIZAL</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="13"/>	
-									<span>CALOOCAN/MALABON/VALENZUELA/BULACAN</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="14"/>	
-									<span>PAMPANGA / ZAMBALES / BATAAN</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="15"/>	
-									<span>PANGASINAN/BENQUET/LAUNION/ILOCOS/NV/ISAB</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="16"/>	
-									<span>OASIS FOODS</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="17"/>	
-									<span>ALL FRESH 1</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="18"/>	
-									<span>ALL FRESH 2</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="19"/>	
-									<span>HARVEST WHEAT</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="20"/>	
-									<span>DOUGHBAKE</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="21"/>	
-									<span>EARTHGRAIN 1</span>
-								</label></p>
-								<p><label>
-									<input type="checkbox" name="area[]" value="22"/>	
-									<span>EARTHGRAIN 2</span>
-								</label></p>
+										</label></p>
+										<p><label>
+												<input type="checkbox" name="area[]" value="2"/>	
+												<span>LAGUNA/BATANGAS/CAVITE/L. PINAS/PARANAQUE</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="3"/>	
+											<span>MANDALUYONG / MARIKINA / RIZAL</span>
+										</label></p>
+									</div>
+									<div class="col s6">
+										<p><label>
+											<input type="checkbox" name="area[]" value="4"/>	
+											<span>PASAY / TAGUIG / MAKATI</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="5"/>	
+											<span>NORTH QC / MARIKINA / RIZAL</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="6"/>	
+											<span>MANILA / VALENZUELA / BULACAN / PAMPANGA</span>
+										</label></p>
+									</div>
+									<div class="col s6">
+										<p><label>
+											<input type="checkbox" name="area[]" value="7"/>	
+											<span>BATANGAS / LAGUNA 1 / QUEZON PROVINCE</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="8"/>	
+											<span>LAGUNA 2/LAS PINAS/MUNTINLUPA/PARANAQUE</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="9"/>	
+											<span>CAVITE</span>
+										</label></p>
+									</div>	
+									<div class="col s6">
+										<p><label>
+											<input type="checkbox" name="area[]" value="10"/>	
+											<span>PASAY/MANILA/TAGUIG/PATEROS/MAKATI</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="11"/>	
+											<span>MANDALUYONG / SAN JUAN / QC</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="12"/>	
+											<span>PASIG / MARIKINA / RIZAL</span>
+										</label></p>
+									</div>	
+									<div class="col s6">
+										<p><label>
+											<input type="checkbox" name="area[]" value="13"/>	
+											<span>CALOOCAN/MALABON/VALENZUELA/BULACAN</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="14"/>	
+											<span>PAMPANGA / ZAMBALES / BATAAN</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="15"/>	
+											<span>PANGASINAN/BENQUET/LAUNION/ILOCOS/NV/ISAB</span>
+										</label></p>
+									</div>	
+									<div class="col s6">
+										<p><label>
+											<input type="checkbox" name="area[]" value="16"/>	
+											<span>OASIS FOODS</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="17"/>	
+											<span>ALL FRESH 1</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="18"/>	
+											<span>ALL FRESH 2</span>
+										</label></p>
+									</div>	
+									<div class="col s6">
+										<p><label>
+											<input type="checkbox" name="area[]" value="19"/>	
+											<span>HARVEST WHEAT</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="20"/>	
+											<span>DOUGHBAKE</span>
+										</label></p>
+										<p><label>
+											<input type="checkbox" name="area[]" value="21"/>	
+											<span>EARTHGRAIN 1</span>
+										</label></p>
+									</div>	
+									<div class="col s6">
+										<p><label>
+											<input type="checkbox" name="area[]" value="22"/>	
+											<span>EARTHGRAIN 2</span>
+										</label></p>
+									</div>				
+								</div>
 							</div>
 						</div>
 						<div class="row">
@@ -879,7 +704,7 @@
 				</div>
 				
 				<div id="choice_11" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 11 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -921,7 +746,7 @@
 				</div>
 				
 				<div id="choice_12" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 12 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -959,7 +784,7 @@
 				</div>
 				
 				<div id="choice_13" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 13 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -985,7 +810,7 @@
 				</div>
 				
 				<div id="choice_14" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 14 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -1134,7 +959,7 @@
 				</div>
 				
 				<div id="choice_15" class="row report_choice">
-					<div class="col s6 offset-s3"">
+					<div class="col s6 offset-s3">
 					<h5 class="center reports-header">Report 15 (change this title)</h5>
 					<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 					<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -1199,10 +1024,6 @@
 	<script src="assets/js/chart-min.js"></script>
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/materialize.js"></script>
-	<script src="assets/js/line-chart.js"></script>
-	<script src="assets/js/line2-chart.js"></script>
-	<script src="assets/js/bar-chart.js"></script>
-	<script src="assets/js/full-lineChart.js"></script>
 	<script src="assets/js/init.js"></script>
 	
 	</body>

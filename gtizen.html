@@ -10,10 +10,6 @@
 </head>
 <body>
 </body>
-	
-	<header class="admin-main-header">
-		<h1>Admin Header</h1>
-	</header>	
 	<aside>
 		<ul class="sidenav">
     	<div class="sidebar-logo">
@@ -28,38 +24,11 @@
 					Overview
 				</a>
 			</li>
-			<li class="nod-padding">
-				<!-- Toggle down this menu if click -->
-				<ul class="collapsible collapsible-accordion">
-			    	<li>
-			     	 	<div class="collapsible-header">
-			     	 		<!-- icon header-->
-			     	 		<i class="material-icons">today</i>
-			     	 		<!-- menu name-->
-			     	 		Reports
-			     	 	</div>
-					    <div class="collapsible-body">
-					      	<!-- callapse menu -->
-					      	<ul id="sub-level-side-menu">
-								<li><a data-target="choice_1" class="click-trigger">click 1</a></li>
-								<li><a data-target="choice_2" class="click-trigger">click 2</a></li>
-								<li><a data-target="choice_3" class="click-trigger">click 3</a></li>
-								<li><a data-target="choice_4" class="click-trigger">click 4</a></li>
-								<li><a data-target="choice_5" class="click-trigger">click 5</a></li>
-								<li><a data-target="choice_6" class="click-trigger">click 6</a></li>
-								<li><a data-target="choice_7" class="click-trigger">click 7</a></li>
-								<li><a data-target="choice_8" class="click-trigger">click 8</a></li>
-								<li><a data-target="choice_9" class="click-trigger">click 9</a></li>
-								<li><a data-target="choice_10" class="click-trigger">click 10</a></li>
-								<li><a data-target="choice_11" class="click-trigger">click 11</a></li>
-								<li><a data-target="choice_12" class="click-trigger">click 12</a></li>
-								<li><a data-target="choice_13" class="click-trigger">click 13</a></li>
-								<li><a data-target="choice_14" class="click-trigger">click 14</a></li>
-								<li><a data-target="choice_15" class="click-trigger">click 15</a></li>
-					      	</ul>
-					    </div>
-				    </li>
-			  	</ul>	
+			<li>
+				<a href="reports.html">
+					<i class="small material-icons">today</i>
+					Reports
+				</a>
 			</li>
 			<li>
 				<a href="gtizen.html">
@@ -98,6 +67,14 @@
 	<main class="admin-content">
 		<!-- Sidenav menu right--->
 		<!-- Content -->
+		<div class="main-header">
+				<h1>GTIZEN INQUIRY</h1>
+		</div>
+		<div class="error-message">
+			<div class="container">
+				<p class="center errors">Card number has been declared lost. Redemtion failed <em>Only show this if success else always hide</em></p>
+			</div>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col s6">
@@ -125,23 +102,23 @@
 						</div>
 						<div class="row">
 							<span class="rep-card-title name col s4">Name</span>
-							<span class="name col s8">Sample long name Example</span>
+							<span class="name col s8">Rosario Esparaga</span>
 						</div>
 						<div class="row">
 							<span class="rep-card-title name col s4">Points</span>
-							<span class="name col s8">$Prompt</span>
+							<span class="name col s8">1055</span>
 						</div>
 						<div class="row">
 							<span class="rep-card-title name col s4">Birthday</span>
-							<span class="name col s8">$bday</span>
+							<span class="name col s8">April 11</span>
 						</div>
 						<div class="row">
 							<span class="rep-card-title name col s4">Register Date</span>
-							<span class="name col s8">$reg_date</span>
+							<span class="name col s8">October 3, 2017</span>
 						</div>
 						<div class="row">
 							<span class="rep-card-title name col s4">Expiry Date</span>
-							<span class="name col s8">$exp_date</span>
+							<span class="name col s8">November 17,2019</span>
 						</div>
 					</div>
 				</div>
@@ -169,15 +146,23 @@
 					<div class="section">
 						<div class="row">
 							<span class="rep-card-title name col s4">Issued By</span>
-							<span class="name col s8">name example long name</span>
+							<span class="name col s8">Tagum Osmena</span>
 						</div>
 						<div class="row">
 							<span class="rep-card-title name col s4">Registered Thru</span>
-							<span class="name col s8">my example long name</span>
+							<span class="name col s8">SMS</span>
 						</div>
+
 						<div class="row">
 							<span class="rep-card-title name col s4">My Favorites</span>
-							<span class="name col s8">$name</span>
+							<div class=" fave name col s8">
+								<ul>
+								<li>1. Macaroons-butter 12s<li>
+								<li>2. cake slice heavenly chocolate</li>
+								<li>3. colorful blooms choco rd</li>
+								</ul>
+							</span>
+							
 						</div>
 					</div>
 				</div>
@@ -228,15 +213,20 @@
 			</div>
 
 			<div id="pagination"></div>
-
+			<!--
+			<ul class="pagination">
+			    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+			    <li class="active"><a href="#!">1</a></li>
+			    <li class="waves-effect"><a href="#!">2</a></li>
+			    <li class="waves-effect"><a href="#!">3</a></li>
+			    <li class="waves-effect"><a href="#!">4</a></li>
+			    <li class="waves-effect"><a href="#!">5</a></li>
+			    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+			</ul>
+			-->
 		<!-- 
 			Only show this error message if have error
 		-->
-		<div class="error-message">
-			<div class="container">
-				<p class="center errors">Card number has been declared lost. Redemtion failed <em>Only show this if success else always hide</em></p>
-			</div>
-		</div>
 	</main>
 
 	<div id="view-more" class="modal">
@@ -253,7 +243,7 @@
 						</div>
 						<!-- query result in table -->
 						<!--  -->
-						<table class="striped">
+						<table class="view striped">
 					        <thead class="table-header">
 					          <tr>
 					              <th>Name</th>
@@ -303,11 +293,14 @@
 	        $(function() {
 	        	/*page*/
 				var CurrPage = 4;
+				var lPage = 100;
+				var fPage = 1;
 
+				
 	            $('#pagination').materializePagination({
 	                align: 'center', //Center align the pagination
-	                lastPage: 100, //Last page click
-	                firstPage: 1, //Fire Page click
+	                lastPage: lPage, //Last page click
+	                firstPage: fPage, //Fire Page click
 					currentPage:CurrPage, //page per display
 	                
 	                useUrlParameter: false, 
