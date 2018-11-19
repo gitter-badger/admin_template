@@ -606,7 +606,7 @@ path[Attributes Style] {
     /*top: 0;*/
     top: -14px;
     left: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     cursor: text;
     -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
     transition: color .2s ease-out, -webkit-transform .2s ease-out;
@@ -1144,7 +1144,8 @@ a.btn.mini {
 }
 
 .input-field>label:not(.label-icon).active {
-  margin-top: 11px;
+  margin-top: 9px;
+  font-size: 15px;
 }
 
 .error-message .container {
