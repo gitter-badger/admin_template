@@ -48,7 +48,7 @@ select {
     font-size: 12px;
     margin: 0 0 8px 0;
     color: #6c3726;
-    padding: 0;
+    padding: 0 0 0 5px;
     display: block;
     -webkit-user-select: none;
     -moz-user-select: none;
