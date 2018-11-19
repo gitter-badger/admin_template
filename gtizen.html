@@ -212,6 +212,7 @@
 				</div>
 			</div>
 
+			<div id="data-container"></div>
 			<div id="pagination"></div>
 			<!--
 			<ul class="pagination">
@@ -292,8 +293,8 @@
 	    $(function() {
 	        $(function() {
 	        	/*page*/
-				var CurrPage = 4;
-				var lPage = 100;
+				var CurrPage = 5;
+				var lPage = 10;
 				var fPage = 1;
 
 				
@@ -304,9 +305,8 @@
 					currentPage:CurrPage, //page per display
 	                
 	                useUrlParameter: false, 
-	                // on click callback
+	                // on click callback optional
 	                onClickCallback: function(requestedPage) {
-
 	                    console.log('Requested page ' + requestedPage);
 	                }
 	            });

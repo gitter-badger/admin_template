@@ -42,7 +42,7 @@ select {
     border: none;
     border-bottom: 1px solid #9e9e9e;
     outline: none;
-    height: 2rem;
+    height: 1rem;
     line-height: 2rem;
     width: 100%;
     font-size: 12px;
@@ -60,17 +60,19 @@ select {
 .select-wrapper .caret {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -16px;
   bottom: 0;
   margin: auto 0;
   z-index: 0;
-  fill: rgba(0, 0, 0, 0.87);
+  fill: rgb(110, 54, 41);
 }
+
 .select-wrapper + label {
   position: absolute;
-  top: -26px;
-  font-size: 10px;
+  top: -35px;
+  font-size: 12px;
 }
+
 .select-wrapper .hide-select {
   width: 0;
   height: 0;
@@ -151,13 +153,9 @@ body.keyboard-focused .select-dropdown.dropdown-content li:focus {
   padding-left: 1rem;
 }
 
-.select-wrapper+label {
-    position: absolute;
-    top: -26px;
-    font-size: .8rem;
-}
-
 .select-wrapper input.select-dropdown:focus {
     border-bottom: 1px solid #8d808d;
 }
+
+
 
