@@ -8,6 +8,7 @@ aside .sidenav {
     border-right: 1px solid rgba(0,0,0,0.14);
     width: 250px;
     position: fixed;
+    display: block;
     height: calc(100% + 60px);    
     backface-visibility: hidden;
     will-change: transform;

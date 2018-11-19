@@ -759,8 +759,8 @@ a {
 
 .input-field .prefix {
   position: absolute;
-  width: 3rem;
-  font-size: 2rem;
+  width: 2rem;
+  font-size: 1.5rem;
   -webkit-transition: color .2s;
   transition: color .2s;
   top: -.5rem;
@@ -777,7 +777,7 @@ a {
 .input-field .prefix ~ .validate ~ label,
 .input-field .prefix ~ .helper-text, 
 .input-field .prefix ~ .autocomplete-content {
-    margin-left: 3rem;
+    margin-left: 2rem;
     width: 92%;
     width: calc(100% - 3rem);
      -webkit-user-select: none;
@@ -1047,17 +1047,25 @@ form .row {
   .modal .container {
     width: 690px;
   }
+
+
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 993px) {
   .container {
-    width: 992px;
+    width: 991px;
+  }
+    .main-header {
+    width: 1013px;
+  }
+  .error-message { 
+    width: 1013px;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 994px) {
   .container {
-    width: 1280px;
+    width: 992px;
   }
 }
 
@@ -1133,3 +1141,10 @@ a.btn.mini {
   margin-top: 11px;
 }
 
+.error-message .container {
+  width: 100%;
+}
+
+.admin-content .container {
+  margin-top: 20px;
+}

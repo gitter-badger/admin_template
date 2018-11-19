@@ -45,7 +45,7 @@ select {
     height: 1rem;
     line-height: 2rem;
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 0 8px 0;
     padding: 0;
     display: block;
@@ -124,7 +124,7 @@ body.keyboard-focused .select-dropdown.dropdown-content li:focus {
 }
 
 .prefix ~ .select-wrapper {
-  margin-left: 3rem;
+  margin-left: 2rem;
   width: 92%;
   width: calc(100% - 3rem);
 }
