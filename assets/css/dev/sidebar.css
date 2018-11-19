@@ -46,8 +46,8 @@ aside .sidenav {
 }
 
 .sidenav li>a {
-    color: rgb(73, 42, 36);
-    font-size: 15px;
+    color: #6c3726;
+    font-size: 14px;
     font-weight: 400;
     padding: 0 30px;
     display: block;
@@ -123,6 +123,7 @@ padding: 0;
     height: inherit;
     padding: 0 27px;
     color: #492a24;
+    font-size: 14px;
 }
 
 .sidenav .collapsible-body {
