@@ -114,9 +114,9 @@ td{
 
 
 table.striped > tbody > tr:nth-child(odd) {
- 
+/* 
   background-color: rgba(170, 213, 213, 0.5);
- 
+ */
 }
 
 
@@ -132,4 +132,8 @@ thead.table-header {
   text-align: center;
   text-transform: uppercase;
   padding: 10px;
+}
+
+table {
+  border: 1px solid #ddd;
 }

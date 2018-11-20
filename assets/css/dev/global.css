@@ -1155,3 +1155,16 @@ a.btn.mini {
 .admin-content .container {
   margin-top: 20px;
 }
+
+.pagination ul li.active {
+    border-radius: 2px;
+}
+
+
+.pagination ul li:hover {
+  cursor: pointer;
+}
+
+.pagination ul {
+  text-align: center; 
+}

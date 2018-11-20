@@ -212,19 +212,32 @@
 				</div>
 			</div>
 
+			<div class="pagination">
+				<ul>
+					<li class="active">
+						<a>1</a>
+					</li>
+					<li><a>2</a></li>
+					<li><a>3</a></li>
+					<li><a>4</a></li>
+				</ul>	
+			</div>
+
 			<div id="data-container"></div>
 			<div id="pagination"></div>
-			<!--
+			
 			<ul class="pagination">
-			    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+			    <li><a><i class="material-icons">chevron_left</i></a></li>
+			    
 			    <li class="active"><a href="#!">1</a></li>
 			    <li class="waves-effect"><a href="#!">2</a></li>
 			    <li class="waves-effect"><a href="#!">3</a></li>
 			    <li class="waves-effect"><a href="#!">4</a></li>
 			    <li class="waves-effect"><a href="#!">5</a></li>
-			    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+			    
+			    <li><a><i class="material-icons">chevron_right</i></a></li>
 			</ul>
-			-->
+			
 		<!-- 
 			Only show this error message if have error
 		-->
@@ -291,6 +304,7 @@
 	<script>
 
 	    $(function() {
+	
 	        $(function() {
 	        	/*page*/
 				var CurrPage = 5;
@@ -302,7 +316,7 @@
 	                align: 'center', //Center align the pagination
 	                lastPage: lPage, //Last page click
 	                firstPage: fPage, //Fire Page click
-					currentPage:CurrPage, //page per display
+									currentPage:CurrPage, //page per display
 	                
 	                useUrlParameter: false, 
 	                // on click callback optional

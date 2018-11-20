@@ -6,7 +6,7 @@ $(document).ready(function(){
 	// line chart
 	var lineChart = document.getElementById("lineChart").getContext('2d');
 	// var data = []
-	var chartData = [12, 5, 3, 5, 2, 3];
+	var chartData = [array];
 
 	var myChart = new Chart(lineChart, {
 		type: 'line',

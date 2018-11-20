@@ -9,7 +9,7 @@ $(document).ready(function(){
   $('.timepicker').timepicker();
   // Initialize modal
   $('.modal').modal();
-
+     $('.tabs').tabs();
 	$('input.autocomplete').autocomplete({
       data: {
         "Apple": null,

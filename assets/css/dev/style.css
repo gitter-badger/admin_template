@@ -20,7 +20,7 @@ new added css file
 @import "checkbox.css";
 @import "reports.css";
 @import "pagination.css";
-
+@import "tabs.css"
 /* colors
 	browncolor: #492a24; 
 	lightbrown: #492a24cf;
@@ -29,9 +29,12 @@ new added css file
 	text color  white
 	
 	light yellow #e7b91ca3
-
-	#fed605;
 	
+	// mid dark grey color #6d6d6d;
+	#fed605;
+	//bvkground light-grey #f5f5f5
+	//border color 1px solid #e6e6e6
+
 	background: #6e3629;
 
 */ 
