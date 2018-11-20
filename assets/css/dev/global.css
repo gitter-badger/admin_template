@@ -319,7 +319,11 @@ svg:not(:root) {
 
  form {
     display: block;
+    /*
+    change form margin-top
     margin-top: 0em;
+    */
+    margin-top: 2em;
 }
 
 form .login {
@@ -720,17 +724,7 @@ textarea.materialize-textarea {
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
-
-     -webkit-user-select: none;
-   -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
 }
-
-
-
-
 
 ul:not(.browser-default)>li {
     list-style-type: none;
@@ -771,6 +765,8 @@ a {
 .input-field .prefix.active {
   color:  #fed605;
 }
+
+
 
 .input-field .prefix ~ input, 
 .input-field .prefix ~ textarea, 
@@ -1032,7 +1028,7 @@ li.last {
   ------start
 */
 form .row {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 
@@ -1146,6 +1142,8 @@ a.btn.mini {
 .input-field>label:not(.label-icon).active {
   margin-top: 9px;
   font-size: 15px;
+  color: #888;
+  }
 }
 
 .error-message .container {
@@ -1168,3 +1166,40 @@ a.btn.mini {
 .pagination ul {
   text-align: center; 
 }
+
+/*
+Added new style for goldihome html
+*/
+.admin-home-sidenav {
+    margin-top: 44px;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]), 
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]), 
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ebce69;
+  -webkit-box-shadow: 0 1px 0 0 #ebce69;
+  box-shadow: 0 1px 0 0 #ebce69;
+}
+
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+
+
+
+
