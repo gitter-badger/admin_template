@@ -2,19 +2,25 @@ table, th, td {
   border: none;
 }
 
+/*
+New
+*/
 table {
   width: 100%;
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
+  border: 1px solid #e6e6e6;
+  background: #f5f5f5;
 }
+/* -------  -------- */
 
 table.striped tr {
   border-bottom: none;
 }
 
 table.striped > tbody > tr:nth-child(odd) {
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(107, 107, 106, 0.1);
 }
 
 table.striped > tbody > tr > td {
@@ -40,7 +46,7 @@ tr {
 }
 
 td{
-  padding: 1px 5px;
+  padding: 10px 5px;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -114,16 +120,21 @@ td{
 
 
 table.striped > tbody > tr:nth-child(odd) {
-/* 
-  background-color: rgba(170, 213, 213, 0.5);
- */
+  background-color: rgba(158, 158, 158, 0.15)
 }
 
 
+/*
+add border in theade
+new css
+*/
 thead.table-header {
-  background: #6e3629;
-  color: #ffffff;
+  background: #e4d25c;
+  color: #683727;
+  border-left: 1px solid #ded64a;
+  border-right: 1px solid #ded64a;
 }
+/* ------------- */
 
 .striped >thead >tr >th {
   border-radius: 0;
@@ -134,6 +145,3 @@ thead.table-header {
   padding: 10px;
 }
 
-table {
-  border: 1px solid #ddd;
-}
