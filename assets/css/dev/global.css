@@ -1199,6 +1199,14 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: #e0e0e0;
 }
 
+ul.sub-level-side-menu  li a{
+    padding-left: 40px;
+    font-size: 12px;
+    padding: 0px 0px 0px 45px;
+    font-size: 14px;
+    color: #808080;
+    font-weight: 100;
+}
 
 
 
