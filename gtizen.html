@@ -257,7 +257,7 @@
 						</div>
 						<!-- query result in table -->
 						<!--  -->
-						<table class="view striped">
+						<table class="view striped" id="table_name">
 					        <thead class="table-header">
 					          <tr>
 					              <th>Name</th>
@@ -301,11 +301,12 @@
 	<script src="assets/js/materialize.js"></script>
 	<script src="assets/js/paginate.js"></script>
 	<script src="assets/js/init.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
 	<script>
-
-	    $(function() {
 	
-	        $(function() {
+	        $(document).ready(function() {
+
+	        	$('#table_name').DataTable();
 	        	/*page*/
 				var CurrPage = 5;
 				var lPage = 10;
@@ -325,7 +326,7 @@
 	                }
 	            });
 	        });
-	    });
+
 	</script>
 	</body>
 </html>
